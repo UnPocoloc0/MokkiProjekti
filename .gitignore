@@ -1,0 +1,24 @@
+# ===============================================
+# Dokumenttien ja suunnittelutiedostojen päätteet
+# ===============================================
+
+*.docx
+*.pdf
+*.sketch
+
+# ====================================
+# Macin järjestelmän omat piilokansiot
+# ====================================
+
+.DS_Store
+
+# ===============
+# Työvaihekansiot
+# ===============
+
+01_Materiaali/
+02_UI_UX_Suunnittelu/
+04_Testaus_Ja_Arviointi/
+
+
+
