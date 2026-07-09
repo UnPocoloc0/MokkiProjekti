@@ -1,0 +1,48 @@
+Mökkiprojektin Pseudokoodi ja toimintalogiikka:
+
+SIVUSTON ALUSTUS:
+	Selain lataa sivun ensimmäistä kertaa
+	Aja funktio ALOITUS_SISALTO()
+
+MUUTTUJAT:
+	etusivu = "nimi, järvikuva, painike"
+	varustelu = "esittely, kuvagridi, varuselulista"
+	alue = "aktiviteetit, etäisyydet kaupunkeihin"
+	yhteydenotto = "nimi, sähköposti, viesti"
+	varaus = "kalenteri, kartta"
+
+KIINTEÄ KÄYTTÖLIITTYMÄ (joka näkyy aina)
+
+	NAVIGAATIOPALKKI (näytön yläreuna)
+		- Linkki 1 Etusivu -> VAIHDA_SISALTO(0)
+		- Linkki 2 Varustelu -> VAIHDA_SISALTO(1)
+		- Linkki 3 Alue -> VAIHDA_SISALTO(2)
+		- Linkki 4 Yhteydenotto -> VAIHDA_SISALTO(3)
+		- Linkki 5 Kalenteri -> VAIHDA_SISALTO(4)
+	
+	DYNAAMINEN SISÄLTÖIKKUNA (tunnus: "kontentti")
+
+TOIMINTALOGIIKKA (js-funktio)
+
+	Funktio ALOITUS_SISALTO():
+		Etsi sivulta tunnuksella "kontentti"
+		Aseta sisältö: etusivu_teksti
+	
+	
+	Funktio VAIHDA_SISALTO(numero):
+		Etsi sivulta tunnuksella "kontentti"
+		Pyyhi vanha sisältö pois
+		
+		JOS numero on 0:
+			SISÄLTÖIKKUNA: etusivu
+		TAI JOS numero on 1:
+			SISÄLTÖIKKUNA: varustelu
+		TAI JOS numero on 2:
+			SISÄLTÖIKKUNA: alue
+		TAI JOS numero on 3:
+			SISÄLTÖIKKUNA: yhteydenotto
+		TAI JOS numero on 4:
+			SISÄLTÖIKKUNA: kartta
+		
+		
+	
