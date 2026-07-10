@@ -2,7 +2,7 @@ Mökkiprojektin Pseudokoodi ja toimintalogiikka:
 
 SIVUSTON ALUSTUS:
 	Selain lataa sivun ensimmäistä kertaa
-	Aja funktio ALOITUS_SISALTO()
+	Aja funktio LATAA_ALOITUS_SISALTO()
 
 MUUTTUJAT:
 	etusivu = "nimi, järvikuva, painike"
@@ -24,7 +24,7 @@ KIINTEÄ KÄYTTÖLIITTYMÄ (joka näkyy aina)
 
 TOIMINTALOGIIKKA (js-funktio)
 
-	Funktio ALOITUS_SISALTO():
+	Funktio LATAA_ALOITUS_SISALTO():
 		Etsi sivulta tunnuksella "kontentti"
 		Aseta sisältö: etusivu_teksti
 	
