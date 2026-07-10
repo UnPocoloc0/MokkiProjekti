@@ -64,11 +64,43 @@
     </div> 
     
     `;
+
+    
+    
       var varusteluHTML = `
-      <div class="p-3 bg-light border rounded">
-        <h2>Ruutu 2</h2>
-        <p>Eri sivujen sisältö tulee tähän</p>
+    <div class="container-fluid mb-4">
+
+      <div class="text-center my-4">
+        <h2>Mökin varustelu</h2>
+        <p>Meiltä löydät kaikki mukavuudet onnistunutta lomaa varten</p>
+      </div>
+
+      <div class="row no-gutters mb-4">
+        <div class="col-6 p-1">
+          <div class="bg-secondary text-white p-4 text-center">Kuva 1</div>
         </div>
+        <div class="col-6 p-1">
+          <div class="bg-secondary text-white p-4 text-center">Kuva 2</div>
+        </div>
+        <div class="col-6 p-1">
+          <div class="bg-secondary text-white p-4 text-center">Kuva 3</div>
+        </div>
+        <div class="col-6 p-1">
+          <div class="bg-secondary text-white p-4 text-center">Kuva 4</div>
+        </div>
+      </div>
+
+      <div class="col-md-8 mx-auto">
+        <h4 class="mb-3">Varustelu</h4>
+        <ul>
+          <li>Hyvin varusteltu keittiö</li>
+          <li>Puulämmitteinen sauna</li>
+          <li>Langaton wifi</li>
+          <li>Soutuvene</li>
+        </ul>
+      </div>
+
+    </div>
     `;
       var alueHTML = `
       <div class="p-3 bg-light border rounded">
@@ -99,5 +131,7 @@
         document.getElementById("kontentti").innerHTML = sisallot[numero];
       }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
