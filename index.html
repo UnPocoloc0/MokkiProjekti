@@ -41,8 +41,8 @@
         <div class="col-12" id="kontentti"></div>
       </div>
     </div>
-    
 
+  
   <script>
       
   var etusivuHTML = `
@@ -137,10 +137,32 @@
   </div>
     `;
       var yhteydenottoHTML = `
-      <div class="p-3 bg-light border rounded">
-        <h2>Ruutu 4</h2>
-        <p>Eri sivujen sisältö tulee tähän</p>
+  <div class="container-fluid mb-4">
+  <div class="text-center my-4">
+    <h2 class="font-weight-bold">Ota yhteyttä</h2>
+    <p class="text-secondary">Onko sinulla kysyttävää mökistä tai haluatko tehdä varauksen? Lähetä meille viesti!</p>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <form action="#" method="POST" onsubmit="alert('Kiitos viestistä, otamme yhteyttä mahdollisimman pian');return false;">
+        <div class="form-group">
+          <label for="nimi">Nimi</label>
+          <input type="text" id="nimi" class="form-control" placeholder="Etunimi Sukunimi" required/>
         </div>
+        <div class="form-group">
+          <label for="email">Sähköposti</label>
+          <input type="email" id="email" class="form-control" placeholder="Matti.Meikäläinen@esimerkki.fi" required/>
+        </div>
+        <div class="form-group">
+          <label for="viesti">Viesti</label>
+          <textarea id="viesti" class="form-control" rows="5" placeholder="Kirjoita viestisi tähän..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Lähetä viesti</button>
+      </form>
+    </div>
+  </div>
+</div>
     `;
       var kalenteriHTML = `
       <div class="p-3 bg-light border rounded">
