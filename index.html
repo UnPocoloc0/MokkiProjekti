@@ -164,11 +164,30 @@
   </div>
 </div>
     `;
+
+    // TODO: Sido kaikki sivut yhteen
+    // TODO: Lisää kuvat
+    // TODO: Lisää oikeat tekstit (Varustelistat, esittelytekstit yms.)
       var kalenteriHTML = `
-      <div class="p-3 bg-light border rounded">
-        <h2>Ruutu 5</h2>
-        <p>Eri sivujen sisältö tulee tähän</p>
-        </div>
+    <div class="container-fluid mb-4">
+    <div class="text-center my-4">
+      <h2 class="font-weight-bold">Varaustilanne</h2>
+      <p class="text-secondary">Villa Leppärannan tulevien kuukausien varaustilanne</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h4 class="mb-3 font-weight-bold text-center">Kesä/ syksy 2026</h4>
+          <ul class="list-group shadow-sm text-secondary">
+            <li class="list-group-item d-flex justify-content-between align-items-center"><span><strong>Heinäkuu</strong></span><span class="badge badge-danger badge-pill p-2">Varattu</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><span><strong>Elokuu</strong></span><span class="badge badge-warning badge-pill p-2">Osittain vapaana</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><span><strong>Syyskuu</strong></span><span class="badge badge-success badge-pill p-2">Vapaa</span></li>
+            
+          </ul>
+        </h4>
+      </div>
+    </div>
+  </div>
     `;
       function LataaAloitusSisalto() {
         document.getElementById("kontentti").innerHTML = etusivuHTML;
