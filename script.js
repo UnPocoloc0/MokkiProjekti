@@ -10,7 +10,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
-            <h2 class="mb-3">Tervetuloa viihtymään Simplelejärven rannalle</h2>
+            <h2 class="mb-3">Tervetuloa viihtymään Simpelejärven rannalle</h2>
             <p class="text-secondary">Villa Leppäranta tarjoaa täydelliset puitteet rentoutumiseen, lomailuun tai etätöihin luonnon keskellä.</p>
           </div>
         </div>
@@ -129,27 +129,7 @@
 </div>
     `;
 
-    // TODO: Sido kaikki sivut yhteen
-    // TODO: Lisää kuvat
-    // TODO: Lisää oikeat tekstit (Varustelistat, esittelytekstit yms.)
-  /*
-  <!-- Lisätään reilu tyhjä tila (py-5) ja tyylikäs jakoviiva ennen kalenteria -->
-    <div id="kalenteri" class="container-fluid py-5 mt-5">
-      
-      <div class="row justify-content-center mb-4">
-        <div class="col-md-8">
-          <hr class="my-4" />
-        </div>
-      </div>
---------------------------------
-      <div class="text-center my-4">
-        <h2 class="font-weight-bold">Varaustilanne</h2>
-        <p class="text-secondary">Villa Leppärannan tulevien kuukausien varaustilanne</p>
-      </div>
-
-      <div class="row justify-content-center">
-        ... (loppuosa pysyy samana kuin ennen)
-  */ 
+   
       var kalenteriHTML = `
   <div id="kalenteri" class="container-fluid py-5 mt-5">
     <div class="col-md-8">
@@ -186,42 +166,47 @@
       }
 
       const sisallot = [etusivuHTML, varusteluHTML, alueHTML, yhteydenottoHTML, kalenteriHTML];
-/*
-      function VaihdaTeksti(numero) {
-        console.log(numero);
-        document.getElementById("kontentti").innerHTML = sisallot[numero];
-        window.scrollTo(0, 0)
-      } */
-       /*
-       function SkrollaaOsioon(osionId) {
-  const elementti = document.getElementById(osionId);
-  if (elementti) {
-    // Lasketaan elementin sijainti sivulla
-    const elementinSijainti = elementti.getBoundingClientRect().top + window.pageYOffset;
-    
-    // Vähennetään navigaatiopalkin korkeus (esim. 70px) + jätetään 20px ilmaa otsikon yläpuolelle
-    const lopullinenKohta = elementinSijainti - 90;
 
-    // Rullataan ikkuna pehmeästi täsmälleen oikeaan koordinaattiin
-    window.scrollTo({
-      top: lopullinenKohta,
-      behavior: 'smooth'
-    });
-  }
-}
-       */
+  
+
   function SkrollaaOsioon(id) {
+    const valikko = document.getElementById("mainNavBar");
+    let valikkoOliAuki = false;
 
-    const elementti = document.getElementById(id);
-    if (elementti) {
+    if (valikko && valikko.classList.contains("show")) {
+      valikko.classList.remove("show");
+      valikkoOliAuki = true;
+   
+    const painike = document.querySelector(".navbar-toggler");
+    if (painike) {
+      painike.classList.add("collapsed");
+      painike.setAttribute("aria-expanded", "false");
 
+       }
+    }
+
+      const elementti = document.getElementById(id);
+      if (elementti) {
+        if(valikkoOliAuki) {
+          setTimeout(function() {
+            SuoritaNatiiviSkrollaus(elementti);
+          }, 250);
+        } else {
+          SuoritaNatiiviSkrollaus(elementti);
+        }
+      }
+  }
+
+    function SuoritaNatiiviSkrollaus(elementti) {
       const elementinSijainti = elementti.getBoundingClientRect().top + window.pageYOffset;
       const lopullinenKohta = elementinSijainti - 80;
-    
 
-    window.scrollTo({
-      top: lopullinenKohta,
-      behavior: 'smooth'
+      window.scrollTo({
+        top: lopullinenKohta,
+        behavior: 'smooth'
       });
     }
-  }
+  
+
+  
+   
