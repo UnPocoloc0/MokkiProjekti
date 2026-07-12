@@ -20,5 +20,13 @@
 02_UI_UX_Suunnittelu/
 04_Testaus_Ja_Arviointi/
 
+sandbox.html
 
-
+# ====================
+# Mediat ja binaarit
+# ====================
+Assets/
+*.jpg
+*.jpeg
+*.png
+*.gif
