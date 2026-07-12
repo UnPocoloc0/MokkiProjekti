@@ -1,58 +1,137 @@
  
   var etusivuHTML = `
-    <div id="etusivu" class="container-fluid p-0 mb-4">
-      <div class="bg-light text-center p-5 text-muted border mb-4" style="min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <h1 class="display-4 font-weight-bold">Villa Leppäranta</h1>
-        <p class="lead my-3">Luonnonrauhaa Parikkalassa</p>
-        <a href="#"class="btn btn-primary btn-lg mt-3" onclick="SkrollaaOsioon('kalenteri'); return false;">Katso vapaat ajat</a>
-      </div>
-
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <h2 class="mb-3">Tervetuloa viihtymään Simpelejärven rannalle</h2>
-            <p class="text-secondary">Villa Leppäranta tarjoaa täydelliset puitteet rentoutumiseen, lomailuun tai etätöihin luonnon keskellä.</p>
-          </div>
-        </div>
-      </div>
-    </div> 
+<div id="etusivu" class="container-fluid p-0 mb-4">
+  
+  <!-- HERO-ALUE: Taustakuva, tummennus ja valkoinen teksti suoraan kuvan päällä -->
+  <div class="jumbotron jumbotron-fluid text-center text-white border-bottom shadow-sm" 
+       style="min-height: 500px; 
+              background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Assets/Takapiha_hero.jpg') no-repeat center center; 
+              background-size: cover; 
+              display: flex; 
+              flex-direction: column; 
+              justify-content: center; 
+              align-items: center;
+              margin-top: -48px;"> <!-- Häivytetään tyhjä tila navigaation alta -->
     
-    `;
+    <div class="container py-5">
+      <h1 class="display-3 font-weight-bold drop-shadow" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">Villa Leppäranta</h1>
+      <p class="lead my-3 font-weight-normal" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.8); font-size: 1.5rem;">Luonnonrauhaa Simpelejärven rannalla Parikkalassa</p>
+      <a href="#" class="btn btn-primary btn-lg mt-4 px-4 py-3 font-weight-bold shadow" onclick="SkrollaaOsioon('kalenteri'); return false;">Katso vapaat ajat</a>
+    </div>
+
+  </div>
+
+  <!-- Esittelyteksti Heron alla -->
+  <div class="container my-5 py-3">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2 class="mb-4 font-weight-bold text-dark">Tervetuloa viihtymään luonnon keskelle</h2>
+        <p class="text-secondary" style="font-size: 1.15rem; line-height: 1.8;">
+          Villa Leppäranta tarjoaa täydelliset puitteet rentoutumiseen, perhelomailuun tai rauhalliseen etätyöskentelyyn. 
+          Nauti omasta rauhasta, puulämmitteisen saunan löylyistä ja puhtaasta järviluonnosta kaikkine mukavuuksineen.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+`;
   var varusteluHTML = `
-    <div id="varustelu" class="container-fluid mb-4">
+<div id="varustelu" class="container-fluid mb-4">
 
-      <div class="text-center my-4">
-        <h2>Mökin varustelu</h2>
-        <p>Täältä löydät kaikki mukavuudet onnistunutta lomaa varten</p>
-      </div>
+  <!-- Otsikkoalue -->
+  <div class="text-center my-4">
+    <h2 class="font-weight-bold">Mökin varustelu ja mukavuudet</h2>
+    <p class="text-secondary">Villa Leppäranta tarjoaa kattavat puitteet rentoutumiseen ja viihtymiseen Simpelejärvellä</p>
+  </div>
 
-      <div class="row no-gutters mb-4">
-        <div class="col-6 p-1">
-          <div class="bg-secondary text-white p-4 text-center">Kuva 1</div>
-        </div>
-        <div class="col-6 p-1">
-          <div class="bg-secondary text-white p-4 text-center">Kuva 2</div>
-        </div>
-        <div class="col-6 p-1">
-          <div class="bg-secondary text-white p-4 text-center">Kuva 3</div>
-        </div>
-        <div class="col-6 p-1">
-          <div class="bg-secondary text-white p-4 text-center">Kuva 4</div>
-        </div>
-      </div>
+  <!-- KUVASANDBOX GRIDI: 12 kuvaa, jotka taltsutetaan samanpituisiksi koodilla -->
+  <div class="row no-gutters mb-5 shadow-sm rounded overflow-hidden bg-white p-2">
 
-      <div class="col-md-8 mx-auto">
-        <h4 class="mb-3">Varustelu</h4>
-        <ul>
-          <li>Hyvin varusteltu keittiö</li>
-          <li>Puulämmitteinen sauna</li>
-          <li>Langaton wifi</li>
-          <li>Soutuvene</li>
+   <div class="col-6 col-md-3 p-1">
+      <img src="Assets/Julkisivu.jpg" class="img-fluid w-100" style="height: 160px; object-fit: cover;" alt="Mökki pihalta katsottuna">
+    </div>
+
+  <div class="col-6 col-md-3 p-1">
+      <img src="Assets/Etusivu_klikattava_s.jpg" class="img-fluid w-100" style="height: 160px; object-fit: cover;" alt="Mökki ulkoa päin">
+    </div>
+
+    <div class="col-6 col-md-3 p-1">
+      <img src="Assets/Terassi.jpg" class="img-fluid w-100" style="height: 160px; object-fit: cover;" alt="Mökin terassi ja riippukeinu">
+    </div>
+    <div class="col-6 col-md-3 p-1">
+      <img src="Assets/Etupiha.jpg" class="img-fluid w-100" style="height: 160px; object-fit: cover;" alt="Näkymä järvelle kesällä">
+    </div>
+    
+    
+    <div class="col-6 col-md-3 p-1">
+      <img src="Assets/Keittio_m.jpg" class="img-fluid w-100" style="height: 160px; object-fit: cover;" alt="Keittiönurkkaus">
+    </div>
+    <div class="col-6 col-md-3 p-1">
+      <img src="Assets/Ruokailutila_s.jpg" class="img-fluid w-100" style="height: 160px; object-fit: cover;" alt="Ruokailutila">
+    </div>
+    
+    <div class="col-6 col-md-3 p-1">
+      <img src="Assets/Ruokapoyta_s.jpg" class="img-fluid w-100" style="height: 160px; object-fit: cover;" alt="Ruokapöytä">
+    </div>
+    <div class="col-6 col-md-3 p-1">
+      <img src="Assets/WC_m.jpg" class="img-fluid w-100" style="height: 160px; object-fit: cover;" alt="Sisä WC">
+    </div>
+    
+    <div class="col-6 col-md-3 p-1">
+      <img src="Assets/WC2.jpg" class="img-fluid w-100" style="height: 160px; object-fit: cover;" alt="Käsienpesupaikka">
+    </div>
+    
+    <div class="col-6 col-md-3 p-1">
+      <img src="Assets/Pesutila_s.jpg" class="img-fluid w-100" style="height: 160px; object-fit: cover;" alt="Pesutilat">
+    </div>
+    
+    <div class="col-6 col-md-3 p-1">
+      <img src="Assets/Suihku_s.jpg" class="img-fluid w-100" style="height: 160px; object-fit: cover;" alt="Suihkutilat">
+    </div>
+    
+    <div class="col-6 col-md-3 p-1">
+      <img src="Assets/Sauna_m.jpg" class="img-fluid w-100" style="height: 160px; object-fit: cover;" alt="Pieni tunnelmallinen sauna">
+    </div>
+    
+    
+    <!-- Huom: WC_m.jpg voidaan säästää toiseen paikkaan tai korvata, gridissä on nyt tasan 12 symmetristä paikkaa! -->
+
+  </div>
+
+  <!-- VARUSTELISTA: Jaetaan kahteen sarakkeeseen -->
+  <div class="col-md-10 mx-auto bg-light p-4 rounded border shadow-sm">
+    <h4 class="mb-4 font-weight-bold text-center text-dark">Mitä mökiltä löytyy?</h4>
+    
+    <div class="row">
+      <!-- Vasen sarake -->
+      <div class="col-md-6">
+        <ul class="list-unstyled text-secondary pl-3">
+          <li class="mb-2">🛋️ Kaksi tukevaa sänkyä & vuodesohva</li>
+          <li class="mb-2">🍳 Hyvin varusteltu keittiö & jääkaappi-pakastin</li>
+          <li class="mb-2">🧼 WC, suihku & pesukone</li>
+          <li class="mb-2">🔥 Puulämmitteinen sauna</li>
+          <li class="mb-2">📺 TV & langaton Wifi</li>
+          <li class="mb-2">🧺 Runsaasti kaappitilaa</li>
+          <li class="mb-2">💧 Hyvälaatuinen juomavesi omasta lähteestä</li>
         </ul>
       </div>
-
+      
+      <!-- Oikea sarake -->
+      <div class="col-md-6">
+        <ul class="list-unstyled text-secondary pl-3">
+          <li class="mb-2">🎹 Sähköpiano ja nuotteja</li>
+          <li class="mb-2">📚 Runsaasti luettavaa lepopäiviin</li>
+          <li class="mb-2">🏖️ Oma uimaranta & avara piha</li>
+          <li class="mb-2">🛶 Soutuvene vesillelähtöön</li>
+          <li class="mb-2">🏡 Pihakeinu & rentouttava riippukeinu</li>
+        </ul>
+      </div>
     </div>
-    `;
+  </div>
+
+</div>
+`;
   var alueHTML = `
     <div id="alue" class="container-fluid mb-4">
       <div class="text-center my-4">
