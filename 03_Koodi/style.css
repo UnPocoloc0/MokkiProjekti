@@ -57,6 +57,9 @@ h1,h2,h3,h4,h5,h6 {
 
   /* KORJAUS 2: "Katso vapaat ajat" -pääpainikkeen uusi korkean kontrastin tyyli */
   .btn-primary {
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Kevyt perusvarjo */
+
     background-color: #ffffff !important; /* Puhtaan valkoinen tausta */
     border-color: #ffffff !important;
     color: var(--color-primary) !important; /* Teksti brändivärillä (järvensininen) */
@@ -71,8 +74,14 @@ h1,h2,h3,h4,h5,h6 {
     background-color: var(--color-primary-hover) !important; /* Hoverissa muuttuu tummansiniseksi */
     border-color: var(--color-primary-hover) !important;
     color: #ffffff !important; /* ...ja teksti valkoiseksi */
+
     transform: translateY(-2px); /* Hieman voimakkaampi nosto */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25) !important;
+
+
+  
+  /* Ohut, hienovaraisen valkoinen reunus rajaamaan painike irti mökistä */
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
   }
 
   /* KORJAUS 3: Navigaatiopalkin taustaväri yhtenäiseksi brändiväriin */
