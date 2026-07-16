@@ -1,0 +1,112 @@
+/* ==========================================================================
+   1. MÄÄRITTELYKERROS (Teeman värit muuttujina)
+   ========================================================================== */
+
+:root {
+  /* ----------------------------------------------------
+           TEEMA A: RAUHALLINEN JÄRVILUONTO (Aktiivinen)
+           ---------------------------------------------------- */
+
+  --color-primary: #1e4d6b;
+  --color-primary-hover: #15364b;
+  --color-accent: #2d5a27;
+  --color-bg-light: #f5f8fa;
+  --color-surface: #ffffff;
+  --color-text-dark: #1e293b;
+  --color-text-muted: #64748b;
+}
+
+/* ==========================================================================
+       2. YLEISET POHJATYYLIT (Base Overrides)
+       - Pehmennetään Bootstrapin kovat kontrastit ja oletukset
+       ========================================================================== */
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
+body {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-dark);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Yleiset otsikot */
+h1,h2,h3,h4,h5,h6 {
+  color: var(--color-text-dark);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Kohdistetaan tyyli niin tarkasti kuin selainpohja vain sallii */
+#kontentti h1 {
+    color: #ffffff !important;
+    text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.7) !important;
+  }
+
+/* KORJAUS 1: Hero-bannerin otsikko valkoiseksi parhaan kontrastin saamiseksi */
+
+  /* ==========================================================================
+         3. KOMPONENTTIKERROS (Sivuston elementtien viilaukset)
+         ========================================================================== */
+
+  /* KORJAUS 2: "Katso vapaat ajat" -pääpainikkeen uusi korkean kontrastin tyyli */
+  .btn-primary {
+    background-color: #ffffff !important; /* Puhtaan valkoinen tausta */
+    border-color: #ffffff !important;
+    color: var(--color-primary) !important; /* Teksti brändivärillä (järvensininen) */
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    transition: all 0.25s ease-in-out !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Kevyt varjo, jotta nousee irti taustasta */
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: var(--color-primary-hover) !important; /* Hoverissa muuttuu tummansiniseksi */
+    border-color: var(--color-primary-hover) !important;
+    color: #ffffff !important; /* ...ja teksti valkoiseksi */
+    transform: translateY(-2px); /* Hieman voimakkaampi nosto */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25) !important;
+  }
+
+  /* KORJAUS 3: Navigaatiopalkin taustaväri yhtenäiseksi brändiväriin */
+  .navbar {
+    background-color: var(--color-primary) !important;
+  }
+
+  /* Varmistetaan, että navigaation linkit ja brändi näkyvät valkoisina tummalla pohjalla */
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+  }
+
+  /* Taulukon tyyli */
+  .table .thead-dark th {
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+  }
+
+  /* Varaustilanteen listat ja badge-värit */
+  .list-group-item {
+    background-color: var(--color-surface) !important;
+    color: var(--color-text-dark) !important;
+    border-color: rgba(0, 0, 0, 0.05) !important;
+  }
+
+  /* Lomakekenttien hienosäätö aktiivisessa tilassa */
+  .form-control:focus {
+    border-color: var(--color-primary) !important;
+    box-shadow: 0 0 0 0.2rem rgba(30, 77, 107, 0.25) !important;
+  }
+}
