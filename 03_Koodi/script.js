@@ -135,20 +135,36 @@ var alueHTML = `
           <tr>
             <th scope="col">Kaupunki</th>
             <th scope="col">Etäisyys</th>
+            <th scope="col">Tutustu kohteeseen</>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><strong>Savonlinna</strong></td>
             <td>60 km</td>
+            <td>
+                <a href="https://visitsavonlinna.fi" target="_blank" rel="noopener" class="city-link"> 
+                    <img src="Assets/logo-savonlinna.jpg" alt="Visit Savonlinna" class="city-thumb">
+                </a>
+            </td>
           </tr>
           <tr>
             <td><strong>Lappeenranta</strong></td>
             <td>95 km</td>
+            <td>
+                <a href="https://visitlappeenranta.fi" target="_blank" rel="noopener" class="city-link">
+                    <img src="Assets/logo-lappeenranta.jpg" alt="Visit Lappeenranta" class="city-thumb">
+                </a>
+            </td>
           </tr>
-          <tr>
+          <tr>lo
             <td><strong>Joensuu</strong></td>
             <td>135 km</td>
+            <td>
+                <a href="https://visitjoensuu.fi" target="_blank" rel="noopener" class="city-link">
+                    <img src="Assets/logo-joensuu.jpg" alt="Visit Joensuu" class="city-thumb">
+                </a>
+            </td>
           </tr>  
         </tbody>
       </table>
