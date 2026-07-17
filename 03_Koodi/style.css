@@ -74,15 +74,24 @@ h6 {
   background-color: var(--color-primary) !important;
 }
 
-.navbar-brand, #footer,
+.navbar-brand
 .navbar-nav .nav-link {
+  transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
+  opacity: 0.75; /* Tehdään linkistä oletuksena hieman himmeämpi... */
+  color: #ffffff !important; /* ...mutta pidetään pohjaväri valkoisena */
+
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffffff!important;
+  opacity: 1 !important;
+ transform: translateY(-1px) scale(1.05); /* Nousee ylöspäin ja kasvaa*/
+}
+
+#footer {
   color: rgba(255, 255, 255, 0.9) !important;
   font-weight: 500;
 }
 
-.navbar .navbar-nav .nav-link:hover {
-  color: #ffffff!important;
-}
 
 .table .thead-dark th {
   background-color: var(--color-primary) !important;
