@@ -5,15 +5,13 @@
 */
 
 :root {
-
-  --color-primary:#1e4d6b;
+  --color-primary: #1e4d6b;
   --color-primary-hover: #15364b;
   --color-accent: #2d5a27;
   --color-bg-light: #f5f8fa;
   --color-surface: #ffffff;
   --color-text-dark: #1e293b;
   --color-text-muted: #64748b;
-
 }
 
 /*
@@ -27,22 +25,23 @@ html {
 }
 
 body {
-
   background-color: var(--color-bg-light);
   color: var(--color-text-dark);
-
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--color-text-dark);
   font-weight: 700;
-
 }
 
 #kontentti h1 {
-  color : #f1f2f3;
-  text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.7)!important; /* Tekstin varjostus */
-
+  color: #f1f2f3;
+  text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.7) !important; /* Tekstin varjostus */
 }
 
 /*
@@ -51,8 +50,6 @@ h1, h2, h3, h4, h5, h6 {
 ===============
 */
 .btn-primary {
-
-
   background-color: #ffffff !important;
   border-color: #ffffff !important;
   color: var(--color-primary) !important;
@@ -60,7 +57,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.02em; /* Lasketaan suhteessa fonttikokoon*/
   transition: all 0.25s ease-in-out !important;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important; /* Kortin varjostus */
-  
 }
 
 .btn-primary:hover,
@@ -72,11 +68,8 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25) !important;
 
   border: 1px solid rgba(255, 255, 255, 0.5) !important;
-
 }
-.navbar
- {
-
+.navbar {
   background-color: var(--color-primary) !important;
 }
 
@@ -92,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .table .thead-dark th {
   background-color: var(--color-primary) !important;
-  border-color: var(--color-primary)!important;
+  border-color: var(--color-primary) !important;
 }
 
 .list-group-item {
@@ -104,4 +97,22 @@ h1, h2, h3, h4, h5, h6 {
 .form-control:focus {
   border-color: var(--color-primary) !important;
   box-shadow: 0 0 0 0.2rem rgba(30, 77, 107, 0.25);
+}
+
+.city-thumb {
+  width: 120px;
+  height: 80px;
+
+  object-fit: cover;
+  object-position: center;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.city-thumb:hover,
+.city-thumb:focus {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+  border-color: var(--color-primary);
 }

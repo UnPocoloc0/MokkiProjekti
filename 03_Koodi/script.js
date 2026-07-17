@@ -157,7 +157,7 @@ var alueHTML = `
                 </a>
             </td>
           </tr>
-          <tr>lo
+          <tr>
             <td><strong>Joensuu</strong></td>
             <td>135 km</td>
             <td>
