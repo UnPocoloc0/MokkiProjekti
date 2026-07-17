@@ -55,6 +55,25 @@
 
     <div class="col-12 p-0" id="kontentti"></div>
 
+<!-- UUSI OMINAISUUS -->
+<!-- Ponnahdusikkuna suurelle kuvalle -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- modal-lg tekee ikkunasta suuren -->
+    <div class="modal-content bg-transparent border-0">      <!-- Läpinäkyvä tausta korostaa kuvaa -->
+      <div class="modal-body text-center p-0 position-relative">
+        <!-- Sulkupainike kuvan kulmaan -->
+        <button type="button" class="close text-white position-absolute" data-dismiss="modal" aria-label="Sulje" style="right: 15px; top: 10px; z-index: 999; font-size: 2rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <!-- Tähän dynaaminen suuri kuva pamahtaa -->
+        <img src="" id="modalTargetImage" class="img-fluid rounded shadow-lg" alt="Suurennettu näkymä">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- UUSI OMINAISUUS LOPPUU -->
+
+
     <footer id="footer" class="bg-dark text-white-50 text-center py-5">
       <div class="container">
         <p class="m-0">© Villa Leppäranta | Luonnonrauhaa Parikkalassa</p>

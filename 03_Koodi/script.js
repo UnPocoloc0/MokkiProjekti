@@ -46,6 +46,11 @@ var etusivuHTML = `
 </div>
 `;
 
+/* TÄHÄN PÄIVITETYT OMINAISUUDET*/ 
+
+// 1. Luodaan muuttuja, joka sisältää kaikki toistuvat attribuutit
+var klikattavaKuva = `cursor: pointer;" data-toggle="modal" data-target="#imageModal" onclick="document.getElementById('modalTargetImage').src=this.src; document.getElementById('modalTargetImage').alt=this.alt;"`;
+
 var varusteluHTML = `
 <div id="varustelu" class="container-fluid mb-4">
   <div class="text-center my-4">
@@ -56,41 +61,41 @@ var varusteluHTML = `
   </div>
 
   <div class="row no-gutters mb-5 shadow-sm rounded overflow-hidden bg-white p-2">
+  <div class="col-6 col-md-3 p-1">
+  <img src="Assets/Julkisivu.jpg" alt="Mökki pihalta katsottuna" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+</div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Julkisivu.jpg" alt="Mökki pihalta katsottuna" class="img-fluid w-100" style="height: 160px; object-fit: cover;">
+      <img src="Assets/Etusivu_klikattava_s.jpg" alt="Mökki ulkoa päin" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Etusivu_klikattava_s.jpg" alt="Mökki ulkoa päin" class="img-fluid w-100" style="height: 160px; object-fit: cover;">
+      <img src="Assets/Terassi.jpg" alt="Mökin terassi ja riippukeinu" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Terassi.jpg" alt="Mökin terassi ja riippukeinu" class="img-fluid w-100" style="height: 160px; object-fit: cover;">
+      <img src="Assets/Etupiha.jpg" alt="Näkymä järvelle kesällä" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Etupiha.jpg" alt="Näkymä järvelle kesällä" class="img-fluid w-100" style="height: 160px; object-fit: cover;">
+      <img src="Assets/Keittio_m.jpg" alt="Keittiönurkkaus" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Keittio_m.jpg" alt="Keittiönurkkaus" class="img-fluid w-100" style="height: 160px; object-fit: cover;">
+      <img src="Assets/Ruokailutila_s.jpg" alt="Ruokailutila" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Ruokailutila_s.jpg" alt="Ruokailutila" class="img-fluid w-100" style="height: 160px; object-fit: cover;">
+      <img src="Assets/Ruokapoyta_s.jpg" alt="Ruokapöytä" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Ruokapoyta_s.jpg" alt="Ruokapöytä" class="img-fluid w-100" style="height: 160px; object-fit: cover;">
+      <img src="Assets/WC_m.jpg" alt="Sisä WC" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/WC_m.jpg" alt="Sisä WC" class="img-fluid w-100" style="height: 160px; object-fit: cover;">
+      <img src="Assets/WC2.jpg" alt="Käsienpesupaikka" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/WC2.jpg" alt="Käsienpesupaikka" class="img-fluid w-100" style="height: 160px; object-fit: cover;">
+      <img src="Assets/Pesutila_s.jpg" alt="Pesutilat" class="img-fluid w-100" style="height: 160px; object-fit: cover;${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Pesutila_s.jpg" alt="Pesutilat" class="img-fluid w-100" style="height: 160px; object-fit: cover;">
+      <img src="Assets/Suihku_s.jpg" alt="Suihkutilat" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Suihku_s.jpg" alt="Suihkutilat" class="img-fluid w-100" style="height: 160px; object-fit: cover;">
-    </div>
-    <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Sauna_m.jpg" alt="Pieni tunnelmallinen sauna" class="img-fluid w-100" style="height: 160px; object-fit: cover;">
+      <img src="Assets/Sauna_m.jpg" alt="Pieni tunnelmallinen sauna" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
   </div>
 
@@ -277,4 +282,18 @@ function SuoritaNatiiviSkrollaus(elementti) {
     top: lopullinenKohta,
     behavior: "smooth",
   });
+
+/* UUSI OMINAISUUS */
+// Kun varustelualueen kuvaa klikataan
+// Käytetään "delegointia" eli kuunnellaan koko dokumenttia, jotta lennosta luodut kuvat tunnistetaan varmasti
+// Kuunnellaan KAIKKIA kuvia, joissa on attribuutti data-target="#imageModal"
+$(document).on('click', 'img[data-target="#imageModal"]', function(e) {
+  // attr('src') ottaa polun juuri sellaisena kuin se on kirjoitettu HTML:ään
+  var src = $(this).attr('src'); 
+  var alt = $(this).attr('alt');
+  
+  // Päivitetään modaliin
+  $('#modalTargetImage').attr('src', src);
+  $('#modalTargetImage').attr('alt', alt);
+});
 }
