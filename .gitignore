@@ -30,3 +30,8 @@ Assets/
 *.jpeg
 *.png
 *.gif
+
+#==================
+# VSC-piilotiedosto
+#==================
+03_Koodi/.vscode/

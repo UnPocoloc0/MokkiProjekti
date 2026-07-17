@@ -69,18 +69,19 @@ h6 {
 
   border: 1px solid rgba(255, 255, 255, 0.5) !important;
 }
+#footer,
 .navbar {
   background-color: var(--color-primary) !important;
 }
 
-.navbar-brand,
+.navbar-brand, #footer,
 .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.9) !important;
   font-weight: 500;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: #ffffff !important;
+  color: #ffffff!important;
 }
 
 .table .thead-dark th {
@@ -119,7 +120,7 @@ h6 {
 
 #varustelu .img-fluid {
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-  border: 1px solid transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #varustelu .img-fluid:hover {
@@ -128,3 +129,4 @@ h6 {
   border-color: var(--color-primary);
   cursor: pointer;
 }
+
