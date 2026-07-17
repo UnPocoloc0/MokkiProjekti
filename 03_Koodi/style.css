@@ -84,7 +84,7 @@ h6 {
 .navbar .navbar-nav .nav-link:hover {
   color: #ffffff!important;
   opacity: 1 !important;
- transform: translateY(-1px) scale(1.05); /* Nousee ylöspäin ja kasvaa*/
+ /* transform: translateY(-1px) scale(1.05); Nousee ylöspäin ja kasvaa */
 }
 
 #footer {
