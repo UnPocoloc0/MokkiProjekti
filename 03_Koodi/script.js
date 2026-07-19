@@ -46,7 +46,7 @@ var etusivuHTML = `
 </div>
 `;
 
-/* TÄHÄN PÄIVITETYT OMINAISUUDET*/ 
+/* TÄHÄN PÄIVITETYT OMINAISUUDET*/
 
 // 1. Luodaan muuttuja, joka sisältää kaikki toistuvat attribuutit
 var klikattavaKuva = `cursor: pointer;" data-toggle="modal" data-target="#imageModal" onclick="document.getElementById('modalTargetImage').src=this.src; document.getElementById('modalTargetImage').alt=this.alt;"`;
@@ -282,18 +282,4 @@ function SuoritaNatiiviSkrollaus(elementti) {
     top: lopullinenKohta,
     behavior: "smooth",
   });
-
-/* UUSI OMINAISUUS */
-// Kun varustelualueen kuvaa klikataan
-// Käytetään "delegointia" eli kuunnellaan koko dokumenttia, jotta lennosta luodut kuvat tunnistetaan varmasti
-// Kuunnellaan KAIKKIA kuvia, joissa on attribuutti data-target="#imageModal"
-$(document).on('click', 'img[data-target="#imageModal"]', function(e) {
-  // attr('src') ottaa polun juuri sellaisena kuin se on kirjoitettu HTML:ään
-  var src = $(this).attr('src'); 
-  var alt = $(this).attr('alt');
-  
-  // Päivitetään modaliin
-  $('#modalTargetImage').attr('src', src);
-  $('#modalTargetImage').attr('alt', alt);
-});
 }
