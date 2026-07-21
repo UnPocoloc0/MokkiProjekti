@@ -35,9 +35,15 @@ var etusivuHTML = `
     <div class="row justify-content-center">
       <div class="col-md-8 text-center">
         <h2 class="mb-4 font-weight-bold text-dark">Tervetuloa viihtymään luonnon keskelle</h2>
-        <p class="text-secondary" style="font-size: 1.15rem; line-height: 1.8">
-          Villa Leppäranta tarjoaa täydelliset puitteet rentoutumiseen, perhelomailuun tai rauhalliseen etätyöskentelyyn. Nauti omasta
-          rauhasta, puulämmitteisen saunan löylyistä ja puhtaasta järviluonnosta kaikkine mukavuuksineen.
+        <p>
+        Villa Leppäranta tarjoaa täydelliset puitteet rentoutumiseen, perhelomailuun tai rauhalliseen
+        etätyöskentelyyn. Nauti puhtaasta järviluonnosta, puulämmitteisen saunan löylyistä ja omasta
+        rauhasta kaikkine mukavuuksineen. 
+        </p>
+
+        <p>
+        Villa Leppäranta sijaitsee hyvien kulkuyhteyksien päässä. Junalla pääsee Helsingin ja Joensuun
+        suunnista kätevästi Parikkalaan ja autolla on mökin pihaan vain pieni poikkeama 6-tieltä. 
         </p>
       </div>
     </div>
@@ -56,7 +62,9 @@ var varusteluHTML = `
   <div class="text-center my-4">
     <div>
       <h2 class="font-weight-bold">Mökin varustelu ja mukavuudet</h2>
-      <p class="text-secondary">Villa Leppäranta tarjoaa kattavat puitteet rentoutumiseen ja viihtymiseen Simpelejärvellä</p>
+      <p>
+      Villa Leppäranta tarjoaa kattavat puitteet rentoutumiseen ja viihtymiseen Simpelejärven rannalla. Hyvin varusteltu
+      mökki mahdollistaa myös pidempiaikaisen oleskelun eri vuodenaikoina.</p>
     </div>
   </div>
 
@@ -101,24 +109,25 @@ var varusteluHTML = `
 
   <div class="row">
     <div class="col-md-6">
-      <ul class="list-unstyled pl-3">
-        <li class="mb-2">🛋️ Kaksi tukevaa sänkyä & vuodesohva</li>
-        <li class="mb-2">🍳 Hyvin varusteltu keittiö & jääkaappi-pakastin</li>
-        <li class="mb-2">🧼 WC, suihku & pesukone</li>
-        <li class="mb-2">🔥 Puulämmitteinen sauna</li>
-        <li class="mb-2">📺 TV & langaton Wifi</li>
-        <li class="mb-2">🧺 Runsaasti kaappitilaa</li>
-        <li class="mb-2">💧 Hyvälaatuinen juomavesi omasta lähteestä</li>
+      <ul class="varustelu-lista list-unstyled">
+        <li>🛋️ Kaksi tukevaa sänkyä & vuodesohva</li>
+        <li>🍳 Hyvin varusteltu keittiö & jääkaappi-pakastin</li>
+        <li>🧼 WC, suihku & pesukone</li>
+        <li>🔥 Puulämmitteinen sauna</li>
+        <li>📺 TV & langaton Wifi</li>
+        <li>🧺 Runsaasti kaappitilaa</li>
+        <li>💧 Hyvälaatuinen juomavesi omasta lähteestä</li>
       </ul>
     </div>
 
     <div class="col-md-6">
-      <ul class="list-unstyled pl-3">
-        <li class="mb-2">🎹 Sähköpiano ja nuotteja</li>
-        <li class="mb-2">📚 Runsaasti luettavaa lepopäiviin</li>
-        <li class="mb-2">🏖️ Oma uimaranta & avara piha</li>
-        <li class="mb-2">🛶 Soutuvene vesillelähtöön</li>
-        <li class="mb-2">🏡 Pihakeinu & rentouttava riippukeinu</li>
+      <ul class="varustelu-lista list-unstyled">
+        <li>🎹 Sähköpiano ja nuotteja</li>
+        <li>📚 Runsaasti luettavaa lepopäiviin</li>
+        <li>🏖️ Oma hiekkapohjainen uimaranta & avara piha</li>
+        <li>🏡 Pihakeinu & rentouttava riippukeinu</li>
+        <li>🐶 Lemmikit sovittavissa erikseen</li>
+        <li>🛶 Soutuvene vesillelähtöön</li>
       </ul>
     </div>
   </div>
@@ -129,7 +138,48 @@ var alueHTML = `
 <div id="alue" class="container-fluid mb-4">
   <div class="text-center my-4">
     <h2 class="font-weight-bold">Alue ja aktiviteetit</h2>
-    <p class="text-secondary">Villa Leppäranta sijaitsee luonnon keskellä, mutta silti lähellä palveluja ja Itä-Suomen kaupunkeja</p>
+    <p class="text-secondary">Villa Leppäranta sijaitsee luonnon keskellä, mutta silti lähellä palveluita ja
+    Itä-Suomen kauniita kaupunkeja</p>
+
+    <p>Parikkalan S-marketiin on matkaa 15 km ja Röksän kyläkauppaan (3,5 km) polkaiset vaikkapa
+    polkupyörällä. Liikenneasema ABC Särkisalmi sijaitsee 9 km päässä.</p>
+
+    <p>Mikäli pelkkä upea järvimaiseman katselu ja hiljaisesta kiireettömyydestä nauttiminen ei riitä,
+    tarjoaa ympäristö aktiviteetteja. Korkeakulttuurin ystävät hurauttavat autolla Savonlinnan
+    Oopperajuhlille tunnissa, ja samalla voi ihastella Suomen kauneimmaksi valittua Punkaharjun
+    maisemareittiä. </p>
+
+    <h2>🎭Kulttuuri, retkeily ja lähikohteet</h2>
+    <p>Paikallista kulttuuritarjontaa löytyy muun muassa Parikkalan kesäteatterin, kesäkonserttien sekä
+    kylätapahtumien muodossa. Erityislaatuisen kulttuurikohteen tarjoaa kuuluisa Parikkalan Patsaspuisto.
+    https://www.patsaspuisto.net</p>
+
+    <p>Patsaspuiston välittömässä läheisyydessä voi käydä herkuttelemassa biisoniburgerilla Iloisen Pässin
+    Maalaispuodissa https://iloinenpassi.fi</p>
+    <p>Luonto tarjoaa runsaasti puuhasteltavaa metsänkävijöille. Upeat Retkeily- marjastus- ja sienestysmaastot ovat ympärillä ja
+    Simpelejärvi tarjoaa hienot puitteet kalastukseen.</p>
+
+    <p>Kansainvälisestikin arvokas lintukohde Siikalahti https://visitparikkala.fi/lintukohteet/  sijaitsee
+    18 km päässä ja tarjoaa upeita luontoelämyksiä koko perheelle. Erilaisia retkeilyreittejä löytyy lähialueelta runsaasti. 
+    Tutustu esimerkiksi Aate-Pekan polkuun
+    https://visitparikkala.fi/lintukohteet/aate-pekan-polku/  ja Pöröpeikon polkuun. 
+    https://visitparikkala.fi/retkeilyreitit/poropeikon-polku/</p>
+    
+    <p>Eläinten ystäville löytyy lähes naapurista Peltolan ratsutila https://www.peltolanratsutila.fi</p>
+
+    <p>Parikkalan keskustasta löydät seuraavia palveluita:</p>
+    <div class="row">
+        <div class="col-md-12">
+        <ul class="palvelu-lista list-unstyled">
+        <li>🛒 S-market</li>
+        <li>💊 Apteekki</li>
+        <li>🍕 Pizzeria</li>
+        <li>🗞️ R-kioski</li>
+        <li>🚆 Rautatieasema</li>
+        </div>
+        </ul>
+    
+    </div>
   </div>
 
   <div class="row justify-content-center mb-5">
