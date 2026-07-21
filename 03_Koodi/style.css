@@ -55,6 +55,10 @@ ul.palvelu-lista li {
   margin-bottom: 0.75rem !important;
 }
 
+.col-md-8 p,
+.col-md-8 ul {
+  text-align: left;
+}
 /*
 ===============
 3. KOMPONENTIT:

@@ -48,7 +48,6 @@ var etusivuHTML = `
       </div>
     </div>
   </div>
-
 </div>
 `;
 
@@ -136,50 +135,54 @@ var varusteluHTML = `
 
 var alueHTML = `
 <div id="alue" class="container-fluid mb-4">
-  <div class="text-center my-4">
-    <h2 class="font-weight-bold">Alue ja aktiviteetit</h2>
-    <p class="text-secondary">Villa Leppäranta sijaitsee luonnon keskellä, mutta silti lähellä palveluita ja
-    Itä-Suomen kauniita kaupunkeja</p>
 
-    <p>Parikkalan S-marketiin on matkaa 15 km ja Röksän kyläkauppaan (3,5 km) polkaiset vaikkapa
-    polkupyörällä. Liikenneasema ABC Särkisalmi sijaitsee 9 km päässä.</p>
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+    <div class="text-center my-4">
+        <h2 class="font-weight-bold">Alue ja aktiviteetit</h2>
+        <p class="text-secondary">Villa Leppäranta sijaitsee luonnon keskellä, mutta silti lähellä palveluita ja
+        Itä-Suomen kauniita kaupunkeja</p>
 
-    <p>Mikäli pelkkä upea järvimaiseman katselu ja hiljaisesta kiireettömyydestä nauttiminen ei riitä,
-    tarjoaa ympäristö aktiviteetteja. Korkeakulttuurin ystävät hurauttavat autolla Savonlinnan
-    Oopperajuhlille tunnissa, ja samalla voi ihastella Suomen kauneimmaksi valittua Punkaharjun
-    maisemareittiä. </p>
+        <p>Parikkalan S-marketiin on matkaa 15 km ja Röksän kyläkauppaan (3,5 km) polkaiset vaikkapa
+        polkupyörällä. Liikenneasema ABC Särkisalmi sijaitsee 9 km päässä.</p>
 
-    <h2>🎭Kulttuuri, retkeily ja lähikohteet</h2>
-    <p>Paikallista kulttuuritarjontaa löytyy muun muassa Parikkalan kesäteatterin, kesäkonserttien sekä
-    kylätapahtumien muodossa. Erityislaatuisen kulttuurikohteen tarjoaa kuuluisa Parikkalan Patsaspuisto.
-    https://www.patsaspuisto.net</p>
+        <p>Mikäli pelkkä upea järvimaiseman katselu ja hiljaisesta kiireettömyydestä nauttiminen ei riitä,
+        tarjoaa ympäristö aktiviteetteja. Korkeakulttuurin ystävät hurauttavat autolla Savonlinnan
+        Oopperajuhlille tunnissa, ja samalla voi ihastella Suomen kauneimmaksi valittua Punkaharjun
+        maisemareittiä. </p>
 
-    <p>Patsaspuiston välittömässä läheisyydessä voi käydä herkuttelemassa biisoniburgerilla Iloisen Pässin
-    Maalaispuodissa https://iloinenpassi.fi</p>
-    <p>Luonto tarjoaa runsaasti puuhasteltavaa metsänkävijöille. Upeat Retkeily- marjastus- ja sienestysmaastot ovat ympärillä ja
-    Simpelejärvi tarjoaa hienot puitteet kalastukseen.</p>
+        <h2>Kulttuuri, retkeily ja lähikohteet</h2>
+        <p>Paikallista kulttuuritarjontaa löytyy muun muassa Parikkalan kesäteatterin, kesäkonserttien sekä
+        kylätapahtumien muodossa. Erityislaatuisen kulttuurikohteen tarjoaa kuuluisa Parikkalan Patsaspuisto.
+        https://www.patsaspuisto.net</p>
 
-    <p>Kansainvälisestikin arvokas lintukohde Siikalahti https://visitparikkala.fi/lintukohteet/  sijaitsee
-    18 km päässä ja tarjoaa upeita luontoelämyksiä koko perheelle. Erilaisia retkeilyreittejä löytyy lähialueelta runsaasti. 
-    Tutustu esimerkiksi Aate-Pekan polkuun
-    https://visitparikkala.fi/lintukohteet/aate-pekan-polku/  ja Pöröpeikon polkuun. 
-    https://visitparikkala.fi/retkeilyreitit/poropeikon-polku/</p>
-    
-    <p>Eläinten ystäville löytyy lähes naapurista Peltolan ratsutila https://www.peltolanratsutila.fi</p>
+        <p>Patsaspuiston välittömässä läheisyydessä voi käydä herkuttelemassa biisoniburgerilla Iloisen Pässin
+        Maalaispuodissa https://iloinenpassi.fi</p>
+        <p>Luonto tarjoaa runsaasti puuhasteltavaa metsänkävijöille. Upeat Retkeily- marjastus- ja sienestysmaastot ovat ympärillä ja
+        Simpelejärvi tarjoaa hienot puitteet kalastukseen.</p>
 
-    <p>Parikkalan keskustasta löydät seuraavia palveluita:</p>
-    <div class="row">
-        <div class="col-md-12">
-        <ul class="palvelu-lista list-unstyled">
-        <li>🛒 S-market</li>
-        <li>💊 Apteekki</li>
-        <li>🍕 Pizzeria</li>
-        <li>🗞️ R-kioski</li>
-        <li>🚆 Rautatieasema</li>
+        <p>Kansainvälisestikin arvokas lintukohde Siikalahti https://visitparikkala.fi/lintukohteet/  sijaitsee
+        18 km päässä ja tarjoaa upeita luontoelämyksiä koko perheelle. Erilaisia retkeilyreittejä löytyy lähialueelta runsaasti. 
+        Tutustu esimerkiksi Aate-Pekan polkuun
+        https://visitparikkala.fi/lintukohteet/aate-pekan-polku/  ja Pöröpeikon polkuun. 
+        https://visitparikkala.fi/retkeilyreitit/poropeikon-polku/</p>
+        
+        <p>Eläinten ystäville löytyy lähes naapurista Peltolan ratsutila https://www.peltolanratsutila.fi</p>
+
+        <p>Parikkalan keskustasta löydät seuraavia palveluita:</p>
+        <div class="row">
+            <div class="col-md-12">
+            <ul class="palvelu-lista list-unstyled">
+            <li>🛒 S-market</li>
+            <li>💊 Apteekki</li>
+            <li>🍕 Pizzeria</li>
+            <li>🗞️ R-kioski</li>
+            <li>🚆 Rautatieasema</li>
+            </div>
+            </ul>
+        
         </div>
-        </ul>
-    
-    </div>
+  
   </div>
 
   <div class="row justify-content-center mb-5">
@@ -262,6 +265,7 @@ var yhteydenottoHTML = `
         <button type="submit" class="btn btn-primary btn-block">Lähetä viesti</button>
       </form>
     </div>
+  </div>
   </div>
 </div>
 `;
