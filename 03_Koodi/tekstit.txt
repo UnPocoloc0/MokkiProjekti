@@ -45,3 +45,16 @@ https://visitparikkala.fi/lintukohteet/aate-pekan-polku/  ja Pöröpeikon polku
 https://visitparikkala.fi/retkeilyreitit/poropeikon-polku/
 
 Eläinten ystäville löytyy lähes naapurista Peltolan ratsutila https://www.peltolanratsutila.fi
+
+
+keskusta:
+-Alko
+-Apteekki
+-Pizzeria
+-R-kioski
+-Junayhteydet
+
+Saapuminen
+-Ajo-ohjeet
+
+Piha-kartta
