@@ -248,14 +248,13 @@ var alueHTML = `
 
 var yhteydenottoHTML = `
 <div id="yhteydenotto" class="container-fluid mb-4">
-  <div class="text-center my-4">
-    <h2 class="font-weight-bold">Ota yhteyttä</h2>
-    <p class="text-secondary">Onko sinulla kysyttävää mökistä tai haluatko tehdä varauksen? Lähetä meille viesti!</p>
-  </div>
-
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <form action="#" method="POST" onsubmit="alert('Kiitos viestistä, otamme yhteyttä mahdollisimman pian');return false;">
+    <div class="row justify-content-center">
+        <div class="col-md-8 my-4 text-center">
+    
+                <h2 class="font-weight-bold">Ota yhteyttä</h2>
+                <p class="text-secondary">Onko sinulla kysyttävää mökistä tai haluatko tehdä varauksen? Lähetä meille viesti!</p>
+   
+ <form action="#" method="POST" onsubmit="alert('Kiitos viestistä, otamme yhteyttä mahdollisimman pian');return false;">
         <div class="form-group">
           <label for="nimi">Nimi</label>
           <input type="text" id="nimi" class="form-control" placeholder="Etunimi Sukunimi" required/>
