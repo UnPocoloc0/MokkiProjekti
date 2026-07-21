@@ -20,9 +20,9 @@ var etusivuHTML = `
       <h1 class="display-3 font-weight-bold hero-title drop-shadow">Villa Leppäranta</h1>
     
       
-      <p class="lead my-3 font-weight-normal" style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); font-size: 1.5rem">
+      <h2 class="lead my-3 font-weight-normal" style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); font-size: 1.5rem">
         Luonnonrauhaa Simpelejärven rannalla Parikkalassa
-      </p>
+      </h2>
       
       <!-- Painike linkitetty rullaamaan kalenteriin oikein -->
       <a href="#" class="btn btn-primary btn-lg mt-4 px-4 py-3 font-weight-bold shadow" onclick="SkrollaaOsioon('kalenteri'); return false;">
@@ -33,8 +33,8 @@ var etusivuHTML = `
 
   <div class="container-fluid mb-4">
     <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-            <h2 class="mb-4 font-weight-bold text-dark">Tervetuloa viihtymään luonnon keskelle</h2>
+        <div class="col-md-8">
+            <h2 class="mb-4 font-weight-bold text-dark text-center">Tervetuloa viihtymään luonnon keskelle</h2>
             <p>
             Villa Leppäranta tarjoaa täydelliset puitteet rentoutumiseen, perhelomailuun tai rauhalliseen
             etätyöskentelyyn. Nauti puhtaasta järviluonnosta, puulämmitteisen saunan löylyistä ja omasta
@@ -43,7 +43,8 @@ var etusivuHTML = `
             männynraikkaat kangasmetsät ja laajat retkeilyreitit avautuvat heti mökin 
             kuistilta. Alueen ainutlaatuinen harjuluonto ja monipuoliset maastot kutsuvat 
             seikkailuun niin kesäisin kuin talvisinkin, tarjoten jokaiselle matkailijalle 
-            jotakin uutta koettavaa.   Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa täydelliset puitteet 
+            jotakin uutta koettavaa.   Saimaan ja Simpelejärven ympäröimä upea järviluonto 
+            tarjoaa täydelliset puitteet 
             ympärivuotiseen virkistäytymiseen ja rauhoittumiseen. Kirkkaat kalavedet, 
             männynraikkaat kangasmetsät ja laajat retkeilyreitit avautuvat heti mökin 
             kuistilta. Alueen ainutlaatuinen harjuluonto ja monipuoliset maastot kutsuvat 
@@ -79,9 +80,9 @@ var klikattavaKuva = `cursor: pointer;" data-toggle="modal" data-target="#imageM
 var varusteluHTML = `
 <div id="varustelu" class="container-fluid mb-4">
     <div class="row justify-content-center">
-        <div class="col-md-8 text-center my-4">
+        <div class="col-md-8 my-4">
        
-            <h2 class="font-weight-bold">Mökin varustelu ja mukavuudet</h2>
+            <h2 class="font-weight-bold text-center">Mökin varustelu ja mukavuudet</h2>
             <p>
             Villa Leppäranta tarjoaa kattavat puitteet rentoutumiseen ja viihtymiseen Simpelejärven rannalla. Hyvin varusteltu
             mökki mahdollistaa myös pidempiaikaisen oleskelun eri vuodenaikoina.  Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
@@ -188,9 +189,9 @@ var varusteluHTML = `
 var alueHTML = `
 <div id="alue" class="container-fluid mb-4">
     <div class="row justify-content-center">
-        <div class="col-md-8 text-center my-4">
+        <div class="col-md-8 my-4">
 
-            <h2 class="font-weight-bold">Alue ja aktiviteetit</h2> 
+            <h2 class="font-weight-bold text-center">Alue ja aktiviteetit</h2> 
             <p>Villa Leppäranta sijaitsee luonnon keskellä, mutta silti lähellä palveluita ja
             Itä-Suomen kauniita kaupunkeja. Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
             tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
@@ -217,7 +218,7 @@ var alueHTML = `
             peruspalvelut löytyvät vain lyhyen ajomatkan päästä, joten lomanvietto on 
             vaivatonta ja huoletonta. </p>
 
-            <h2>Kulttuuri, retkeily ja lähikohteet</h2>
+            <h2 class="font-weight-bold text-center">Kulttuuri, retkeily ja lähikohteet</h2>
             <p>Paikallista kulttuuritarjontaa löytyy muun muassa Parikkalan kesäteatterin, kesäkonserttien sekä
             kylätapahtumien muodossa. Erityislaatuisen kulttuurikohteen tarjoaa kuuluisa Parikkalan Patsaspuisto.
             https://www.patsaspuisto.net. Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa täydelliset puitteet 
@@ -368,9 +369,9 @@ var kalenteriHTML = `
     </div>
   </div>
 
-  <div class="text-center my-4">
-    <h2 class="font-weight-bold">Varaustilanne</h2>
-    <p>Villa Leppärannan tulevien kuukausien varaustilanne</p>
+  <div class="my-4">
+    <h2 class="font-weight-bold text-center">Varaustilanne</h2>
+    <p class="text-center">Villa Leppärannan tulevien kuukausien varaustilanne</p>
   </div>
 
   <div class="row justify-content-center">

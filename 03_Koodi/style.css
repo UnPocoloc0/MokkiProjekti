@@ -200,3 +200,12 @@ ul.palvelu-lista li {
   transform: scale(1.03);
   cursor: pointer;
 }
+
+/* Pidetään selkeä vasen tasaus */
+/* Sallii selaimen tavuttaa pitkiä sanoja automaattisesti */
+p {
+  text-align: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
