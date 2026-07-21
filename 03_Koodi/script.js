@@ -165,18 +165,19 @@ var alueHTML = `
             kylätapahtumien muodossa. Erityislaatuisen kulttuurikohteen tarjoaa kuuluisa Parikkalan Patsaspuisto.
             https://www.patsaspuisto.net</p>
 
-            <p>Patsaspuiston välittömässä läheisyydessä voi käydä herkuttelemassa biisoniburgerilla Iloisen Pässin
-            Maalaispuodissa https://iloinenpassi.fi</p>
+            <p>Patsaspuiston välittömässä läheisyydessä voi käydä herkuttelemassa biisoniburgerilla <a href="https://iloinenpassi.fi">Iloisen Pässin
+            Maalaispuodissa.</a></p>
             <p>Luonto tarjoaa runsaasti puuhasteltavaa metsänkävijöille. Upeat Retkeily- marjastus- ja sienestysmaastot ovat ympärillä ja
             Simpelejärvi tarjoaa hienot puitteet kalastukseen.</p>
 
-            <p>Kansainvälisestikin arvokas lintukohde Siikalahti https://visitparikkala.fi/lintukohteet/  sijaitsee
-            18 km päässä ja tarjoaa upeita luontoelämyksiä koko perheelle. Erilaisia retkeilyreittejä löytyy lähialueelta runsaasti. 
-            Tutustu esimerkiksi Aate-Pekan polkuun
-            https://visitparikkala.fi/lintukohteet/aate-pekan-polku/  ja Pöröpeikon polkuun. 
-            https://visitparikkala.fi/retkeilyreitit/poropeikon-polku/</p>
+            <p>Kansainvälisestikin arvokas lintukohde <a href="https://visitparikkala.fi/lintukohteet/">Siikalahti</a>  sijaitsee
+                18 km päässä ja tarjoaa upeita luontoelämyksiä koko perheelle. Erilaisia retkeilyreittejä löytyy lähialueelta runsaasti. 
+                Tutustu esimerkiksi <a href="https://visitparikkala.fi/lintukohteet/aate-pekan-polku"/>Aate-Pekan polkuun</a>
+                ja <a href="https://visitparikkala.fi/retkeilyreitit/poropeikon-polku">Pöröpeikon polkuun. 
+                </a>
+            </p>
             
-            <p>Eläinten ystäville löytyy lähes naapurista Peltolan ratsutila https://www.peltolanratsutila.fi</p>
+            <p>Eläinten ystäville löytyy lähes naapurista <ahref="https://www.peltolanratsutila.fi">Peltolan ratsutila.</a></p>
 
             <p class="mt-4">Parikkalan keskustasta löydät seuraavia palveluita:</p>
         
