@@ -252,9 +252,9 @@ var yhteydenottoHTML = `
         <div class="col-md-8 my-4 text-center">
     
                 <h2 class="font-weight-bold">Ota yhteyttä</h2>
-                <p class="text-secondary">Onko sinulla kysyttävää mökistä tai haluatko tehdä varauksen? Lähetä meille viesti!</p>
+                <p class="text-secondary text-center">Onko sinulla kysyttävää mökistä tai haluatko tehdä varauksen? Lähetä meille viesti!</p>
    
- <form action="#" method="POST" onsubmit="alert('Kiitos viestistä, otamme yhteyttä mahdollisimman pian');return false;">
+            <form action="#" method="POST" onsubmit="alert('Kiitos viestistä, otamme yhteyttä mahdollisimman pian');return false;">
         <div class="form-group">
           <label for="nimi">Nimi</label>
           <input type="text" id="nimi" class="form-control" placeholder="Etunimi Sukunimi" required/>
