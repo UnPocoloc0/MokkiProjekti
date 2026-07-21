@@ -52,8 +52,6 @@ var etusivuHTML = `
 </div>
 `;
 
-/* TÄHÄN PÄIVITETYT OMINAISUUDET*/
-
 // 1. Luodaan muuttuja, joka sisältää kaikki toistuvat attribuutit
 var klikattavaKuva = `cursor: pointer;" data-toggle="modal" data-target="#imageModal" onclick="document.getElementById('modalTargetImage').src=this.src; document.getElementById('modalTargetImage').alt=this.alt;"`;
 
@@ -255,7 +253,7 @@ var yhteydenottoHTML = `
                 <h2 class="font-weight-bold">Ota yhteyttä</h2>
                 <p class="text-center">Onko sinulla kysyttävää mökistä tai haluatko tehdä varauksen? Lähetä meille viesti!</p>
    
-            <form action="#" method="POST" onsubmit="alert('Kiitos viestistä, otamme yhteyttä mahdollisimman pian');return false;">
+            <form action="#" method="POST" onsubmit=return false;">
         <div class="form-group">
           <label for="nimi">Nimi</label>
           <input type="text" id="nimi" class="form-control" placeholder="Etunimi Sukunimi" required/>
