@@ -44,6 +44,12 @@ h6 {
   text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.7) !important; /* Tekstin varjostus */
 }
 
+p {
+  color: var(--text-secondary, #6c757d);
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
 /*
 ===============
 3. KOMPONENTIT:
@@ -74,24 +80,21 @@ h6 {
   background-color: var(--color-primary) !important;
 }
 
-.navbar-brand
-.navbar-nav .nav-link {
+.navbar-brand .navbar-nav .nav-link {
   transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
   opacity: 0.75; /* Tehdään linkistä oletuksena hieman himmeämpi... */
   color: #ffffff !important; /* ...mutta pidetään pohjaväri valkoisena */
-
 }
 .navbar .navbar-nav .nav-link:hover {
-  color: #ffffff!important;
+  color: #ffffff !important;
   opacity: 1 !important;
- /* transform: translateY(-1px) scale(1.05); Nousee ylöspäin ja kasvaa */
+  /* transform: translateY(-1px) scale(1.05); Nousee ylöspäin ja kasvaa */
 }
 
 #footer {
   color: rgba(255, 255, 255, 0.9) !important;
   font-weight: 500;
 }
-
 
 .table .thead-dark th {
   background-color: var(--color-primary) !important;
@@ -138,4 +141,3 @@ h6 {
   border-color: var(--color-primary);
   cursor: pointer;
 }
-
