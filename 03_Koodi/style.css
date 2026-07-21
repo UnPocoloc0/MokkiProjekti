@@ -175,22 +175,28 @@ ul.palvelu-lista li {
   border-color: var(--color-primary);
 }
 
-#varustelu .img-fluid {
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-#varustelu .img-fluid:hover {
-  transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 6px 12px rgba;
-  border-color: var(--color-primary);
-  cursor: pointer;
-}
-
 @media (max-width: 768px) {
   .col-md-8,
   .varustelu-lista {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+}
+
+/* Kohdistetaan elementteihin (esim. img, .card tai .img-thumbnail) */
+.card img,
+.img-fluid,
+#galleria img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Tekee liikkeestä sulavan */
+}
+
+.img-fluid,
+#galleria img {
+  transition: transform 0.3s ease;
+}
+
+.img-fluid:hover,
+#galleria img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
 }
