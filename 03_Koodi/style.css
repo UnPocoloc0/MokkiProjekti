@@ -209,3 +209,8 @@ p {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
 }
+
+footer p,
+#footer p {
+  text-align: center !important;
+}
