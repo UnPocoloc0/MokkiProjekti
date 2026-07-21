@@ -220,15 +220,15 @@ var alueHTML = `
 
             <h2 class="font-weight-bold text-center">Kulttuuri, retkeily ja lähikohteet</h2>
             <p>Paikallista kulttuuritarjontaa löytyy muun muassa Parikkalan kesäteatterin, kesäkonserttien sekä
-            kylätapahtumien muodossa. Erityislaatuisen kulttuurikohteen tarjoaa kuuluisa Parikkalan Patsaspuisto.
-            https://www.patsaspuisto.net. Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa täydelliset puitteet 
+            kylätapahtumien muodossa. Erityislaatuisen kulttuurikohteen tarjoaa kuuluisa
+            <a href="https://www.patsaspuisto.net" target="blank">Parikkalan Patsaspuisto.<a/>Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa täydelliset puitteet 
             ympärivuotiseen virkistäytymiseen ja rauhoittumiseen. Kirkkaat kalavedet, 
             männynraikkaat kangasmetsät ja laajat retkeilyreitit avautuvat heti mökin 
             kuistilta. Alueen ainutlaatuinen harjuluonto ja monipuoliset maastot kutsuvat 
             seikkailuun niin kesäisin kuin talvisinkin, tarjoten jokaiselle matkailijalle 
             jotakin uutta koettavaa.</p>
 
-            <p>Patsaspuiston välittömässä läheisyydessä voi käydä herkuttelemassa biisoniburgerilla <a href="https://iloinenpassi.fi">Iloisen Pässin
+            <p>Patsaspuiston välittömässä läheisyydessä voi käydä herkuttelemassa biisoniburgerilla <a href="https://iloinenpassi.fi" target="blank">Iloisen Pässin
             Maalaispuodissa.</a>  Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
             tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
             käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
@@ -243,10 +243,10 @@ var alueHTML = `
             täyttää ilman ja luonnon omat äänet luovat täydellisen taustamusiikin 
             lomahetkillesi.</p>
 
-            <p>Kansainvälisestikin arvokas lintukohde <a href="https://visitparikkala.fi/lintukohteet/">Siikalahti</a>  sijaitsee
+            <p>Kansainvälisestikin arvokas lintukohde <a href="https://visitparikkala.fi/lintukohteet/" target="blank">Siikalahti</a>  sijaitsee
                 18 km päässä ja tarjoaa upeita luontoelämyksiä koko perheelle. Erilaisia retkeilyreittejä löytyy lähialueelta runsaasti. 
-                Tutustu esimerkiksi <a href="https://visitparikkala.fi/lintukohteet/aate-pekan-polku"/>Aate-Pekan polkuun</a>
-                ja <a href="https://visitparikkala.fi/retkeilyreitit/poropeikon-polku">Pöröpeikon polkuun. 
+                Tutustu esimerkiksi <a href="https://visitparikkala.fi/lintukohteet/aate-pekan-polku" target="blank">Aate-Pekan polkuun</a>
+                ja <a href="https://visitparikkala.fi/retkeilyreitit/poropeikon-polku" target="blank">Pöröpeikon polkuun. 
                 </a>  Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa täydelliset puitteet 
                 ympärivuotiseen virkistäytymiseen ja rauhoittumiseen. Kirkkaat kalavedet, 
                 männynraikkaat kangasmetsät ja laajat retkeilyreitit avautuvat heti mökin 
@@ -255,7 +255,7 @@ var alueHTML = `
                 jotakin uutta koettavaa.
             </p>
             
-            <p>Eläinten ystäville löytyy lähes naapurista <a href="https://www.peltolanratsutila.fi">Peltolan ratsutila.</a>
+            <p>Eläinten ystäville löytyy lähes naapurista <a href="https://www.peltolanratsutila.fi" target="blank">Peltolan ratsutila.</a>
             Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
             tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
             käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
