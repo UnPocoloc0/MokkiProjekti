@@ -291,7 +291,7 @@ var kalenteriHTML = `
 
   <div class="row justify-content-center">
     <div class="col-md-8">
-      <h4 class="mb-3 font-weight-bold text-center">Kesä/ syksy 2026</h4>
+      <h3 class="font-weight-bold text-center">Kesä/ syksy 2026</h3>
       <ul class="list-group shadow-sm text-secondary">
         <li class="list-group-item d-flex justify-content-between align-items-center"><span><strong>Heinäkuu</strong></span><span class="badge badge-danger badge-pill p-2">Varattu</span></li>
         <li class="list-group-item d-flex justify-content-between align-items-center"><span><strong>Elokuu</strong></span><span class="badge badge-warning badge-pill p-2">Osittain vapaana</span></li>
