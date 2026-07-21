@@ -38,12 +38,33 @@ var etusivuHTML = `
             <p>
             Villa Leppäranta tarjoaa täydelliset puitteet rentoutumiseen, perhelomailuun tai rauhalliseen
             etätyöskentelyyn. Nauti puhtaasta järviluonnosta, puulämmitteisen saunan löylyistä ja omasta
-            rauhasta kaikkine mukavuuksineen. 
+            rauhasta kaikkine mukavuuksineen.   Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa täydelliset puitteet 
+            ympärivuotiseen virkistäytymiseen ja rauhoittumiseen. Kirkkaat kalavedet, 
+            männynraikkaat kangasmetsät ja laajat retkeilyreitit avautuvat heti mökin 
+            kuistilta. Alueen ainutlaatuinen harjuluonto ja monipuoliset maastot kutsuvat 
+            seikkailuun niin kesäisin kuin talvisinkin, tarjoten jokaiselle matkailijalle 
+            jotakin uutta koettavaa.   Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa täydelliset puitteet 
+            ympärivuotiseen virkistäytymiseen ja rauhoittumiseen. Kirkkaat kalavedet, 
+            männynraikkaat kangasmetsät ja laajat retkeilyreitit avautuvat heti mökin 
+            kuistilta. Alueen ainutlaatuinen harjuluonto ja monipuoliset maastot kutsuvat 
+            seikkailuun niin kesäisin kuin talvisinkin, tarjoten jokaiselle matkailijalle 
+            jotakin uutta koettavaa.
             </p>
 
             <p>
             Villa Leppäranta sijaitsee hyvien kulkuyhteyksien päässä. Junalla pääsee Helsingin ja Joensuun
-            suunnista kätevästi Parikkalaan ja autolla on mökin pihaan vain pieni poikkeama 6-tieltä. 
+            suunnista kätevästi Parikkalaan ja autolla on mökin pihaan vain pieni poikkeama 6-tieltä.
+            Kesäpäivät kuluvat rattoisasti saunoen, soutelemalla ja puhtaan järviveden 
+            syleilyssä uiden. Syksyn tullen lähimetsät täyttyvät runsaasta marja- ja 
+            sienisadosta, ja hiljaisuus laskeutuu tyynen veden ylle. Mökkeily on ennen kaikkea 
+            irtiottokokemus arjen kiireistä – paikka, jossa aika pysähtyy, puusaunan tuoksu 
+            täyttää ilman ja luonnon omat äänet luovat täydellisen taustamusiikin 
+            lomahetkillesi.   Kesäpäivät kuluvat rattoisasti saunoen, soutelemalla ja puhtaan järviveden 
+            syleilyssä uiden. Syksyn tullen lähimetsät täyttyvät runsaasta marja- ja 
+            sienisadosta, ja hiljaisuus laskeutuu tyynen veden ylle. Mökkeily on ennen kaikkea 
+            irtiottokokemus arjen kiireistä – paikka, jossa aika pysähtyy, puusaunan tuoksu 
+            täyttää ilman ja luonnon omat äänet luovat täydellisen taustamusiikin 
+            lomahetkillesi.
             </p>
         </div>
     </div>
@@ -63,7 +84,30 @@ var varusteluHTML = `
             <h2 class="font-weight-bold">Mökin varustelu ja mukavuudet</h2>
             <p>
             Villa Leppäranta tarjoaa kattavat puitteet rentoutumiseen ja viihtymiseen Simpelejärven rannalla. Hyvin varusteltu
-            mökki mahdollistaa myös pidempiaikaisen oleskelun eri vuodenaikoina.
+            mökki mahdollistaa myös pidempiaikaisen oleskelun eri vuodenaikoina.  Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
+            tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
+            käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
+            paikallisista herkuista viihtyisissä lähikahviloissa. Kaikki tarvittavat 
+            peruspalvelut löytyvät vain lyhyen ajomatkan päästä, joten lomanvietto on 
+            vaivatonta ja huoletonta.
+            </p>
+
+            <p>
+            Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
+            tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
+            käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
+            paikallisista herkuista viihtyisissä lähikahviloissa. Kaikki tarvittavat 
+            peruspalvelut löytyvät vain lyhyen ajomatkan päästä, joten lomanvietto on 
+            vaivatonta ja huoletonta.
+            </p>
+
+            <p>
+            Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa täydelliset puitteet 
+            ympärivuotiseen virkistäytymiseen ja rauhoittumiseen. Kirkkaat kalavedet, 
+            männynraikkaat kangasmetsät ja laajat retkeilyreitit avautuvat heti mökin 
+            kuistilta. Alueen ainutlaatuinen harjuluonto ja monipuoliset maastot kutsuvat 
+            seikkailuun niin kesäisin kuin talvisinkin, tarjoten jokaiselle matkailijalle 
+            jotakin uutta koettavaa.
             </p>
         </div>
     </div>
@@ -148,34 +192,75 @@ var alueHTML = `
 
             <h2 class="font-weight-bold">Alue ja aktiviteetit</h2> 
             <p>Villa Leppäranta sijaitsee luonnon keskellä, mutta silti lähellä palveluita ja
-            Itä-Suomen kauniita kaupunkeja</p>
+            Itä-Suomen kauniita kaupunkeja. Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
+            tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
+            käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
+            paikallisista herkuista viihtyisissä lähikahviloissa. Kaikki tarvittavat 
+            peruspalvelut löytyvät vain lyhyen ajomatkan päästä, joten lomanvietto on 
+            vaivatonta ja huoletonta.</p>
 
             <p>Parikkalan S-marketiin on matkaa 15 km ja Röksän kyläkauppaan (3,5 km) polkaiset vaikkapa
-            polkupyörällä. Liikenneasema ABC Särkisalmi sijaitsee 9 km päässä.</p>
+            polkupyörällä. Liikenneasema ABC Särkisalmi sijaitsee 9 km päässä.  Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
+            tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
+            käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
+            paikallisista herkuista viihtyisissä lähikahviloissa. Kaikki tarvittavat 
+            peruspalvelut löytyvät vain lyhyen ajomatkan päästä, joten lomanvietto on 
+            vaivatonta ja huoletonta.</p>
 
             <p>Mikäli pelkkä upea järvimaiseman katselu ja hiljaisesta kiireettömyydestä nauttiminen ei riitä,
             tarjoaa ympäristö aktiviteetteja. Korkeakulttuurin ystävät hurauttavat autolla Savonlinnan
             Oopperajuhlille tunnissa, ja samalla voi ihastella Suomen kauneimmaksi valittua Punkaharjun
-            maisemareittiä. </p>
+            maisemareittiä.  Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
+            tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
+            käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
+            paikallisista herkuista viihtyisissä lähikahviloissa. Kaikki tarvittavat 
+            peruspalvelut löytyvät vain lyhyen ajomatkan päästä, joten lomanvietto on 
+            vaivatonta ja huoletonta. </p>
 
             <h2>Kulttuuri, retkeily ja lähikohteet</h2>
             <p>Paikallista kulttuuritarjontaa löytyy muun muassa Parikkalan kesäteatterin, kesäkonserttien sekä
             kylätapahtumien muodossa. Erityislaatuisen kulttuurikohteen tarjoaa kuuluisa Parikkalan Patsaspuisto.
-            https://www.patsaspuisto.net</p>
+            https://www.patsaspuisto.net. Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa täydelliset puitteet 
+            ympärivuotiseen virkistäytymiseen ja rauhoittumiseen. Kirkkaat kalavedet, 
+            männynraikkaat kangasmetsät ja laajat retkeilyreitit avautuvat heti mökin 
+            kuistilta. Alueen ainutlaatuinen harjuluonto ja monipuoliset maastot kutsuvat 
+            seikkailuun niin kesäisin kuin talvisinkin, tarjoten jokaiselle matkailijalle 
+            jotakin uutta koettavaa.</p>
 
             <p>Patsaspuiston välittömässä läheisyydessä voi käydä herkuttelemassa biisoniburgerilla <a href="https://iloinenpassi.fi">Iloisen Pässin
-            Maalaispuodissa.</a></p>
+            Maalaispuodissa.</a>  Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
+            tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
+            käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
+            paikallisista herkuista viihtyisissä lähikahviloissa. Kaikki tarvittavat 
+            peruspalvelut löytyvät vain lyhyen ajomatkan päästä, joten lomanvietto on 
+            vaivatonta ja huoletonta.</p>
             <p>Luonto tarjoaa runsaasti puuhasteltavaa metsänkävijöille. Upeat Retkeily- marjastus- ja sienestysmaastot ovat ympärillä ja
-            Simpelejärvi tarjoaa hienot puitteet kalastukseen.</p>
+            Simpelejärvi tarjoaa hienot puitteet kalastukseen.  Kesäpäivät kuluvat rattoisasti saunoen, soutelemalla ja puhtaan järviveden 
+            syleilyssä uiden. Syksyn tullen lähimetsät täyttyvät runsaasta marja- ja 
+            sienisadosta, ja hiljaisuus laskeutuu tyynen veden ylle. Mökkeily on ennen kaikkea 
+            irtiottokokemus arjen kiireistä – paikka, jossa aika pysähtyy, puusaunan tuoksu 
+            täyttää ilman ja luonnon omat äänet luovat täydellisen taustamusiikin 
+            lomahetkillesi.</p>
 
             <p>Kansainvälisestikin arvokas lintukohde <a href="https://visitparikkala.fi/lintukohteet/">Siikalahti</a>  sijaitsee
                 18 km päässä ja tarjoaa upeita luontoelämyksiä koko perheelle. Erilaisia retkeilyreittejä löytyy lähialueelta runsaasti. 
                 Tutustu esimerkiksi <a href="https://visitparikkala.fi/lintukohteet/aate-pekan-polku"/>Aate-Pekan polkuun</a>
                 ja <a href="https://visitparikkala.fi/retkeilyreitit/poropeikon-polku">Pöröpeikon polkuun. 
-                </a>
+                </a>  Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa täydelliset puitteet 
+                ympärivuotiseen virkistäytymiseen ja rauhoittumiseen. Kirkkaat kalavedet, 
+                männynraikkaat kangasmetsät ja laajat retkeilyreitit avautuvat heti mökin 
+                kuistilta. Alueen ainutlaatuinen harjuluonto ja monipuoliset maastot kutsuvat 
+                seikkailuun niin kesäisin kuin talvisinkin, tarjoten jokaiselle matkailijalle 
+                jotakin uutta koettavaa.
             </p>
             
-            <p>Eläinten ystäville löytyy lähes naapurista <ahref="https://www.peltolanratsutila.fi">Peltolan ratsutila.</a></p>
+            <p>Eläinten ystäville löytyy lähes naapurista <a href="https://www.peltolanratsutila.fi">Peltolan ratsutila.</a>
+            Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
+            tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
+            käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
+            paikallisista herkuista viihtyisissä lähikahviloissa. Kaikki tarvittavat 
+            peruspalvelut löytyvät vain lyhyen ajomatkan päästä, joten lomanvietto on 
+            vaivatonta ja huoletonta.</p>
 
             <p class="mt-4">Parikkalan keskustasta löydät seuraavia palveluita:</p>
         
