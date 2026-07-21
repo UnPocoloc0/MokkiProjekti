@@ -149,7 +149,7 @@ var alueHTML = `
         <div class="col-md-8 text-center my-4">
 
             <h2 class="font-weight-bold">Alue ja aktiviteetit</h2> 
-            <p class="text-secondary">Villa Leppäranta sijaitsee luonnon keskellä, mutta silti lähellä palveluita ja
+            <p>Villa Leppäranta sijaitsee luonnon keskellä, mutta silti lähellä palveluita ja
             Itä-Suomen kauniita kaupunkeja</p>
 
             <p>Parikkalan S-marketiin on matkaa 15 km ja Röksän kyläkauppaan (3,5 km) polkaiset vaikkapa
