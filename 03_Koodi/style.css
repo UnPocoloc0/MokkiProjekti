@@ -84,6 +84,11 @@ ul.palvelu-lista li {
 
   border: 1px solid rgba(255, 255, 255, 0.5) !important;
 }
+
+.jumbotron .lead {
+  color: #ffffff !important;
+  opacity: 1;
+}
 #footer,
 .navbar {
   background-color: var(--color-primary) !important;
@@ -149,4 +154,12 @@ ul.palvelu-lista li {
   box-shadow: 0 6px 12px rgba;
   border-color: var(--color-primary);
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .col-md-8,
+  .varustelu-lista {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
