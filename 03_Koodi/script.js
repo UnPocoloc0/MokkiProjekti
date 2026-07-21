@@ -193,7 +193,7 @@ var alueHTML = `
 
   <div class="row justify-content-center mb-5">
     <div class="col-md-8">
-      <h4 class="mb-3 font-weight-bold text-center">Etäisyydet lähikaupunkeihin</h4>
+      <h2 class="mb-3 font-weight-bold text-center">Etäisyydet lähikaupunkeihin</h2>
       <table class="table table-striped table-hover border text-secondary">
         <thead class="thead-dark">
           <tr>
@@ -237,7 +237,7 @@ var alueHTML = `
 
   <div class="row justify-content-center">
     <div class="col-md-8 text-center">
-      <h4 class="mb-3 font-weight-bold">Sijainti kartalla</h4>
+      <h2 class="mb-3 font-weight-bold">Sijainti kartalla</h2>
       <div class="embed-responsive w-100 embed-responsive-16by9 border rounded shadow-sm">
         <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1872.2478546193755!2d29.4975735!3d61.5544444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469a45610ec25277%3A0x67db1a1d3557876a!2sParikkala!5e0!3m2!1sfi!2sfi!4v1710000000000!5m2!1sfi!2sfi" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
