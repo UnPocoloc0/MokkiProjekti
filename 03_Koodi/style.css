@@ -38,6 +38,8 @@ h5,
 h6 {
   color: var(--color-text-dark);
   font-weight: 700;
+  margin-top: 2rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 #kontentti h1 {
@@ -117,6 +119,11 @@ ul.palvelu-lista li {
 #footer p {
   color: #ffffff !important;
   opacity: 1 !important;
+}
+
+.table,
+.embed-responsive {
+  margin-top: 2rem !important;
 }
 
 .table .thead-dark th {

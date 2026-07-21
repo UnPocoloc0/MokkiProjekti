@@ -193,7 +193,7 @@ var alueHTML = `
 
   <div class="row justify-content-center mb-5">
     <div class="col-md-8">
-      <h4 class="mb-3 font-weight-bold">Etäisyydet lähikaupunkeihin</h4>
+      <h4 class="mb-3 font-weight-bold text-center">Etäisyydet lähikaupunkeihin</h4>
       <table class="table table-striped table-hover border text-secondary">
         <thead class="thead-dark">
           <tr>
