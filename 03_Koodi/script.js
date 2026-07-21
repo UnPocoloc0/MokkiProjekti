@@ -252,7 +252,7 @@ var yhteydenottoHTML = `
         <div class="col-md-8 my-4 text-center">
     
                 <h2 class="font-weight-bold">Ota yhteyttä</h2>
-                <p class="text-secondary text-center">Onko sinulla kysyttävää mökistä tai haluatko tehdä varauksen? Lähetä meille viesti!</p>
+                <p class="text-center">Onko sinulla kysyttävää mökistä tai haluatko tehdä varauksen? Lähetä meille viesti!</p>
    
             <form action="#" method="POST" onsubmit="alert('Kiitos viestistä, otamme yhteyttä mahdollisimman pian');return false;">
         <div class="form-group">
@@ -286,7 +286,7 @@ var kalenteriHTML = `
 
   <div class="text-center my-4">
     <h2 class="font-weight-bold">Varaustilanne</h2>
-    <p class="text-secondary">Villa Leppärannan tulevien kuukausien varaustilanne</p>
+    <p>Villa Leppärannan tulevien kuukausien varaustilanne</p>
   </div>
 
   <div class="row justify-content-center">
