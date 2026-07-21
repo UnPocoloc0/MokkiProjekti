@@ -50,6 +50,10 @@ p {
   line-height: 1.8;
 }
 
+ul.varustelu-lista li {
+  margin-bottom: 0.75rem !important;
+}
+
 /*
 ===============
 3. KOMPONENTIT:
