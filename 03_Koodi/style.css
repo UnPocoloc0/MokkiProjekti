@@ -110,6 +110,12 @@ ul.palvelu-lista li {
   font-weight: 500;
 }
 
+#footer,
+#footer p {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
 .table .thead-dark th {
   background-color: var(--color-primary) !important;
   border-color: var(--color-primary) !important;
