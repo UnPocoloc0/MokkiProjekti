@@ -42,6 +42,13 @@ h6 {
   margin-bottom: 1.5rem !important;
 }
 
+h2 {
+  color: var(--color-text-dark);
+  font-weight: 700;
+  margin-top: 2.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
 #kontentti h1 {
   color: #f1f2f3;
   text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.7) !important; /* Tekstin varjostus */
