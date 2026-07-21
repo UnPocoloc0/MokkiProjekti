@@ -111,6 +111,9 @@ var varusteluHTML = `
     </div>
   </div>
 
+  <div class="row justify-content-center my-4">
+  <div class="col-md-8 text-center my-4">
+
   <div class="row">
     <div class="col-md-6">
       <ul class="varustelu-lista list-unstyled">
@@ -134,6 +137,8 @@ var varusteluHTML = `
         <li>🛶 Soutuvene vesillelähtöön</li>
       </ul>
     </div>
+    </div>
+  </div>
   </div>
 </div>
 `;
