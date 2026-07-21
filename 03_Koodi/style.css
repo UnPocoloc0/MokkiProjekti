@@ -214,3 +214,43 @@ footer p,
 #footer p {
   text-align: center !important;
 }
+
+/* Mobiilivalikon tyylit silloin, kun se on auki (alle 992px ruuduilla) */
+@media (max-width: 991.98px) {
+  #mainNavBar {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* Ohut vaalea rajaus navigaation alle */
+  }
+
+  /* Lisätään hieman ilmaa myös yksittäisten linkkien väliin mobiilissa */
+  /* #mainNavBar .nav-link {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+} */
+
+/* Mobiilivalikon tyylit (alle 992px ruuduilla) */
+@media (max-width: 991.98px) {
+    /* Lisätään hieman ilmaa koko valikon yläreunaan */
+    #mainNavBar {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  
+    /* Lisätään jokaisen linkkielementin alle ohut rajaus ja väljyyttä */
+    #mainNavBar .nav-item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+  
+    /* Siistitään linkkien pystysuuntainen tila (padding) */
+    #mainNavBar .nav-link {
+      padding-top: 0.6rem;
+      padding-bottom: 0.6rem;
+    }
+  
+    #mainNavBar .nav-item:last-child {
+        border-bottom: none;
+      }
+
+  }
