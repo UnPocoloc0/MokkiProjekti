@@ -31,23 +31,24 @@ var etusivuHTML = `
     </div>
   </div>
 
-  <div class="container my-5 py-3">
+  <div class="container-fluid mb-4">
     <div class="row justify-content-center">
-      <div class="col-md-8 text-center">
-        <h2 class="mb-4 font-weight-bold text-dark">Tervetuloa viihtymään luonnon keskelle</h2>
-        <p>
-        Villa Leppäranta tarjoaa täydelliset puitteet rentoutumiseen, perhelomailuun tai rauhalliseen
-        etätyöskentelyyn. Nauti puhtaasta järviluonnosta, puulämmitteisen saunan löylyistä ja omasta
-        rauhasta kaikkine mukavuuksineen. 
-        </p>
+        <div class="col-md-8 text-center">
+            <h2 class="mb-4 font-weight-bold text-dark">Tervetuloa viihtymään luonnon keskelle</h2>
+            <p>
+            Villa Leppäranta tarjoaa täydelliset puitteet rentoutumiseen, perhelomailuun tai rauhalliseen
+            etätyöskentelyyn. Nauti puhtaasta järviluonnosta, puulämmitteisen saunan löylyistä ja omasta
+            rauhasta kaikkine mukavuuksineen. 
+            </p>
 
-        <p>
-        Villa Leppäranta sijaitsee hyvien kulkuyhteyksien päässä. Junalla pääsee Helsingin ja Joensuun
-        suunnista kätevästi Parikkalaan ja autolla on mökin pihaan vain pieni poikkeama 6-tieltä. 
-        </p>
-      </div>
+            <p>
+            Villa Leppäranta sijaitsee hyvien kulkuyhteyksien päässä. Junalla pääsee Helsingin ja Joensuun
+            suunnista kätevästi Parikkalaan ja autolla on mökin pihaan vain pieni poikkeama 6-tieltä. 
+            </p>
+        </div>
     </div>
-  </div>
+</div>
+
 </div>
 `;
 
@@ -58,14 +59,18 @@ var klikattavaKuva = `cursor: pointer;" data-toggle="modal" data-target="#imageM
 
 var varusteluHTML = `
 <div id="varustelu" class="container-fluid mb-4">
-  <div class="text-center my-4">
-    <div>
-      <h2 class="font-weight-bold">Mökin varustelu ja mukavuudet</h2>
-      <p>
-      Villa Leppäranta tarjoaa kattavat puitteet rentoutumiseen ja viihtymiseen Simpelejärven rannalla. Hyvin varusteltu
-      mökki mahdollistaa myös pidempiaikaisen oleskelun eri vuodenaikoina.</p>
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center my-4">
+       
+            <h2 class="font-weight-bold">Mökin varustelu ja mukavuudet</h2>
+            <p>
+            Villa Leppäranta tarjoaa kattavat puitteet rentoutumiseen ja viihtymiseen Simpelejärven rannalla. Hyvin varusteltu
+            mökki mahdollistaa myös pidempiaikaisen oleskelun eri vuodenaikoina.
+            </p>
+        </div>
     </div>
-  </div>
+</div>
+
 
   <div class="row no-gutters mb-5 shadow-sm rounded overflow-hidden bg-white p-2">
   <div class="col-6 col-md-3 p-1">
