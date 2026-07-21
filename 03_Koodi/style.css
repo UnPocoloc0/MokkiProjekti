@@ -7,6 +7,7 @@
 :root {
   --color-primary: #1e4d6b;
   --color-primary-hover: #15364b;
+  --text-secondary: #2b2b2b;
   --color-accent: #2d5a27;
   --color-bg-light: #f5f8fa;
   --color-surface: #ffffff;
@@ -45,14 +46,16 @@ h6 {
 }
 
 p {
-  color: var(--text-secondary, #6c757d);
-  font-size: 1.15rem;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
   line-height: 1.8;
 }
 
 ul.varustelu-lista li,
 ul.palvelu-lista li {
   margin-bottom: 0.75rem !important;
+  font-size: 1.2rem !important;
+  line-height: 1.6;
 }
 
 .col-md-8 p,
