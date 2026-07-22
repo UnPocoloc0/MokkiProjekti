@@ -3,10 +3,12 @@
 1. TEEMAN VÄRIT MUUTTUJINA:
 ===========================
 */
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
 :root {
   --color-primary: #1e4d6b;
   --color-primary-hover: #15364b;
@@ -186,11 +188,10 @@ ul.palvelu-lista li {
   }
 }
 
-
 .card img,
 .img-fluid,
 #galleria img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .img-fluid,
@@ -204,7 +205,6 @@ ul.palvelu-lista li {
   cursor: pointer;
 }
 
-
 p {
   text-align: left;
   hyphens: auto;
@@ -217,41 +217,37 @@ footer p,
   text-align: center !important;
 }
 
+/* Lisätään turvallinen laatikkomalli kaikille elementeille */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Otetaan koko leveys ilman ylivuotoa */
+.navbar,
+#footer {
+  width: 100%;
+  max-width: 100%;
+}
 
 @media (max-width: 991.98px) {
   #mainNavBar {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15); 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
 
-
-
-
-@media (max-width: 991.98px) {
-   
-    #mainNavBar {
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-    }
-  
- 
-    #mainNavBar .nav-item {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    }
-  
-   
-    #mainNavBar .nav-link {
-      padding-top: 0.6rem;
-      padding-bottom: 0.6rem;
-    }
-  
-    #mainNavBar .nav-item:last-child {
-        border-bottom: none;
-      }
-
+  #mainNavBar .nav-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
 
-  /* * {
-    outline: 1px solid red !important;
-  } */
+  #mainNavBar .nav-link {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+
+  #mainNavBar .nav-item:last-child {
+    border-bottom: none;
+  }
+}

@@ -1,5 +1,5 @@
 var etusivuHTML = /* html */ `
-<div id="etusivu" class="container-fluid p-0 mb-4">
+<div id="etusivu" class="mb-4">
   <div
     class="jumbotron jumbotron-fluid text-center text-white border-bottom shadow-sm"
     style="
@@ -12,20 +12,15 @@ var etusivuHTML = /* html */ `
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: -48px;
     "
   >
     <div class="container py-5">
-    
-      <h1 class="display-3 font-weight-bold hero-title drop-shadow">Villa Leppäranta</h1>
-    
-      
+      <h1 class="display-4 display-md-3 font-weight-bold hero-title drop-shadow">Villa Leppäranta</h1>
       <h2 class="lead my-3 font-weight-normal" style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); 
       font-size: 1.5rem">
         Luonnonrauhaa Simpelejärven rannalla Parikkalassa
       </h2>
-      
-
+    
       <a href="#" class="btn btn-primary btn-lg mt-4 px-4 py-3 font-weight-bold shadow" 
       onclick="SkrollaaOsioon('kalenteri'); return false;">
         Katso vapaat ajat
@@ -33,7 +28,7 @@ var etusivuHTML = /* html */ `
     </div>
   </div>
 
-  <div class="container-fluid mb-4">
+  <div class="container mb-4">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <h2 class="mb-4 font-weight-bold text-dark text-center">Tervetuloa viihtymään 
@@ -86,131 +81,111 @@ onclick="document.getElementById('modalTargetImage').src=this.src;
 document.getElementById('modalTargetImage').alt=this.alt;"`;
 
 var varusteluHTML = /* html */ `
-<div id="varustelu" class="container-fluid mb-4">
+<div id="varustelu" class="container mb-4">
     <div class="row justify-content-center">
         <div class="col-md-8 my-4">
-       
             <h2 class="font-weight-bold text-center">Mökin varustelu ja mukavuudet</h2>
             <p>
             Villa Leppäranta tarjoaa kattavat puitteet rentoutumiseen ja viihtymiseen Simpelejärven 
-            rannalla. Hyvin varusteltu
-            mökki mahdollistaa myös pidempiaikaisen oleskelun eri vuodenaikoina.  
+            rannalla. Hyvin varusteltu mökki mahdollistaa myös pidempiaikaisen oleskelun eri vuodenaikoina.  
             Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
-            tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
-            käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
-            paikallisista herkuista viihtyisissä lähikahviloissa. Kaikki tarvittavat 
-            peruspalvelut löytyvät vain lyhyen ajomatkan päästä, joten lomanvietto on 
-            vaivatonta ja huoletonta.
+            tekemistä riittää pidemmäksi kuin viikonlopun ajaksi.
             </p>
-
             <p>
             Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
-            tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
-            käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
-            paikallisista herkuista viihtyisissä lähikahviloissa. Kaikki tarvittavat 
-            peruspalvelut löytyvät vain lyhyen ajomatkan päästä, joten lomanvietto on 
-            vaivatonta ja huoletonta.
+            tekemistä riittää pidemmäksi kuin viikonlopun ajaksi.
             </p>
-
             <p>
             Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa täydelliset puitteet 
-            ympärivuotiseen virkistäytymiseen ja rauhoittumiseen. Kirkkaat kalavedet, 
-            männynraikkaat kangasmetsät ja laajat retkeilyreitit avautuvat heti mökin 
-            kuistilta. Alueen ainutlaatuinen harjuluonto ja monipuoliset maastot kutsuvat 
-            seikkailuun niin kesäisin kuin talvisinkin, tarjoten jokaiselle matkailijalle 
-            jotakin uutta koettavaa.
+            ympärivuotiseen virkistäytymiseen ja rauhoittumiseen.
             </p>
         </div>
     </div>
-</div>
 
-
-  <div class="row no-gutters mb-5 shadow-sm rounded overflow-hidden bg-white p-2">
-  <div class="col-6 col-md-3 p-1">
-  <img src="Assets/Julkisivu.jpg" 
-  alt="Mökki pihalta katsottuna" class="img-fluid w-100" style="height: 160px; object-fit: cover; 
-  ${klikattavaKuva}>
-</div>
-    <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Etusivu_klikattava_s.jpg" alt="Mökki ulkoa päin" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
-    </div>
-    <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Terassi.jpg" alt="Mökin terassi ja riippukeinu" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
-    </div>
-    <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Etupiha.jpg" alt="Näkymä järvelle kesällä" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
-    </div>
-    <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Keittio_m.jpg" alt="Keittiönurkkaus" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
-    </div>
-    <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Ruokailutila_s.jpg" alt="Ruokailutila" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
-    </div>
-    <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Ruokapoyta_s.jpg" alt="Ruokapöytä" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
-    </div>
-    <div class="col-6 col-md-3 p-1">
-      <img src="Assets/WC_m.jpg" alt="Sisä WC" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
-    </div>
-    <div class="col-6 col-md-3 p-1">
-      <img src="Assets/WC2.jpg" alt="Käsienpesupaikka" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
-    </div>
-    <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Pesutila_s.jpg" alt="Pesutilat" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover;${klikattavaKuva}">
-    </div>
-    <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Suihku_s.jpg" alt="Suihkutilat" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
-    </div>
-    <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Sauna_m.jpg" alt="Pieni tunnelmallinen sauna" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
-    </div>
-  </div>
-
-  <div class="row justify-content-center my-4">
-  <div class="col-md-8 text-center my-4">
-
-  <div class="row">
-    <div class="col-md-6">
-      <ul class="varustelu-lista list-unstyled">
-        <li>🛋️ Kaksi tukevaa sänkyä & vuodesohva</li>
-        <li>🍳 Hyvin varusteltu keittiö & jääkaappi-pakastin</li>
-        <li>🧼 WC, suihku & pesukone</li>
-        <li>🔥 Puulämmitteinen sauna</li>
-        <li>📺 TV & langaton Wifi</li>
-        <li>🧺 Runsaasti kaappitilaa</li>
-        <li>💧 Hyvälaatuinen juomavesi omasta lähteestä</li>
-      </ul>
+    
+    <div class="row no-gutters mb-5 shadow-sm rounded overflow-hidden bg-white p-2">
+      <div class="col-6 col-md-3 p-1">
+        <img src="Assets/Julkisivu.jpg" alt="Mökki pihalta katsottuna" class="img-fluid w-100" 
+        style="height: 160px; object-fit: cover; ${klikattavaKuva}">
+      </div>
+      <div class="col-6 col-md-3 p-1">
+        <img src="Assets/Etusivu_klikattava_s.jpg" alt="Mökki ulkoa päin" class="img-fluid w-100" 
+        style="height: 160px; object-fit: cover; ${klikattavaKuva}">
+      </div>
+      <div class="col-6 col-md-3 p-1">
+        <img src="Assets/Terassi.jpg" alt="Mökin terassi ja riippukeinu" class="img-fluid w-100" 
+        style="height: 160px; object-fit: cover; ${klikattavaKuva}">
+      </div>
+      <div class="col-6 col-md-3 p-1">
+        <img src="Assets/Etupiha.jpg" alt="Näkymä järvelle kesällä" class="img-fluid w-100" 
+        style="height: 160px; object-fit: cover; ${klikattavaKuva}">
+      </div>
+      <div class="col-6 col-md-3 p-1">
+        <img src="Assets/Keittio_m.jpg" alt="Keittiönurkkaus" class="img-fluid w-100" 
+        style="height: 160px; object-fit: cover; ${klikattavaKuva}">
+      </div>
+      <div class="col-6 col-md-3 p-1">
+        <img src="Assets/Ruokailutila_s.jpg" alt="Ruokailutila" class="img-fluid w-100" 
+        style="height: 160px; object-fit: cover; ${klikattavaKuva}">
+      </div>
+      <div class="col-6 col-md-3 p-1">
+        <img src="Assets/Ruokapoyta_s.jpg" alt="Ruokapöytä" class="img-fluid w-100" 
+        style="height: 160px; object-fit: cover; ${klikattavaKuva}">
+      </div>
+      <div class="col-6 col-md-3 p-1">
+        <img src="Assets/WC_m.jpg" alt="Sisä WC" class="img-fluid w-100" 
+        style="height: 160px; object-fit: cover; ${klikattavaKuva}">
+      </div>
+      <div class="col-6 col-md-3 p-1">
+        <img src="Assets/WC2.jpg" alt="Käsienpesupaikka" class="img-fluid w-100" 
+        style="height: 160px; object-fit: cover; ${klikattavaKuva}">
+      </div>
+      <div class="col-6 col-md-3 p-1">
+        <img src="Assets/Pesutila_s.jpg" alt="Pesutilat" class="img-fluid w-100" 
+        style="height: 160px; object-fit: cover; ${klikattavaKuva}">
+      </div>
+      <div class="col-6 col-md-3 p-1">
+        <img src="Assets/Suihku_s.jpg" alt="Suihkutilat" class="img-fluid w-100" 
+        style="height: 160px; object-fit: cover; ${klikattavaKuva}">
+      </div>
+      <div class="col-6 col-md-3 p-1">
+        <img src="Assets/Sauna_m.jpg" alt="Pieni tunnelmallinen sauna" class="img-fluid w-100" 
+        style="height: 160px; object-fit: cover; ${klikattavaKuva}">
+      </div>
     </div>
 
-    <div class="col-md-6">
-      <ul class="varustelu-lista list-unstyled">
-        <li>🎹 Sähköpiano ja nuotteja</li>
-        <li>📚 Runsaasti luettavaa lepopäiviin</li>
-        <li>🏖️ Oma hiekkapohjainen uimaranta & avara piha</li>
-        <li>🏡 Pihakeinu & rentouttava riippukeinu</li>
-        <li>🐶 Lemmikit sovittavissa erikseen</li>
-        <li>🛶 Soutuvene vesillelähtöön</li>
-      </ul>
+    <div class="row justify-content-center my-4">
+      <div class="col-md-8 text-center my-4">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="varustelu-lista list-unstyled">
+              <li>🛋️ Kaksi tukevaa sänkyä & vuodesohva</li>
+              <li>🍳 Hyvin varusteltu keittiö & jääkaappi-pakastin</li>
+              <li>🧼 WC, suihku & pesukone</li>
+              <li>🔥 Puulämmitteinen sauna</li>
+              <li>📺 TV & langaton Wifi</li>
+              <li>🧺 Runsaasti kaappitilaa</li>
+              <li>💧 Hyvälaatuinen juomavesi omasta lähteestä</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="varustelu-lista list-unstyled">
+              <li>🎹 Sähköpiano ja nuotteja</li>
+              <li>📚 Runsaasti luettavaa lepopäiviin</li>
+              <li>🏖️ Oma hiekkapohjainen uimaranta & avara piha</li>
+              <li>🏡 Pihakeinu & rentouttava riippukeinu</li>
+              <li>🐶 Lemmikit sovittavissa erikseen</li>
+              <li>🛶 Soutuvene vesillelähtöön</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-  </div>
-  </div>
-</div>
+</div> <!-- varustelu-containe -->
 `;
 
 var alueHTML = /* html */ `
-<div id="alue" class="container-fluid mb-4">
+<div id="alue" class="container mb-4">
     <div class="row justify-content-center">
         <div class="col-md-8 my-4">
 
@@ -335,8 +310,10 @@ var alueHTML = /* html */ `
             <td><strong>Savonlinna</strong></td>
             <td>60 km</td>
             <td>
-                <a href="https://visitsavonlinna.fi" target="_blank" rel="noopener" class="city-link"> 
-                    <img src="Assets/logo-savonlinna.jpg" alt="Visit Savonlinna" class="city-thumb">
+                <a href="https://visitsavonlinna.fi" target="_blank" rel="noopener" 
+                class="city-link"> 
+                    <img src="Assets/logo-savonlinna.jpg" alt="Visit Savonlinna"
+                     class="city-thumb">
                 </a>
             </td>
           </tr>
@@ -344,8 +321,10 @@ var alueHTML = /* html */ `
             <td><strong>Lappeenranta</strong></td>
             <td>95 km</td>
             <td>
-                <a href="https://visitlappeenranta.fi" target="_blank" rel="noopener" class="city-link">
-                    <img src="Assets/logo-lappeenranta.jpg" alt="Visit Lappeenranta" class="city-thumb">
+                <a href="https://visitlappeenranta.fi" target="_blank" rel="noopener" 
+                class="city-link">
+                    <img src="Assets/logo-lappeenranta.jpg" alt="Visit Lappeenranta" 
+                    class="city-thumb">
                 </a>
             </td>
           </tr>
@@ -368,7 +347,9 @@ var alueHTML = /* html */ `
       <h2 class="mb-3 font-weight-bold">Sijainti kartalla</h2>
       <div class="embed-responsive w-100 embed-responsive-16by9 border rounded shadow-sm">
         <iframe class="embed-responsive-item" 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1872.2478546193755!2d29.4975735!3d61.5544444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469a45610ec25277%3A0x67db1a1d3557876a!2sParikkala!5e0!3m2!1sfi!2sfi!4v1710000000000!5m2!1sfi!2sfi" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1872.2478546193755!2d29.4975735!
+        3d61.5544444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469a45610ec25277%3A0x
+        67db1a1d3557876a!2sParikkala!5e0!3m2!1sfi!2sfi!4v1710000000000!5m2!1sfi!2sfi" 
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
@@ -377,7 +358,7 @@ var alueHTML = /* html */ `
 `;
 
 var yhteydenottoHTML = /* html */ `
-<div id="yhteydenotto" class="container-fluid mb-4">
+<div id="yhteydenotto" class="container mb-4">
     <div class="row justify-content-center">
         <div class="col-md-8 my-4 text-center">
     
@@ -413,7 +394,7 @@ const RIVI_TYYLI = "list-group-item d-flex justify-content-between align-items-c
 const BADGE_TYYLI = "badge badge-pill p-2";
 
 var kalenteriHTML = /* html*/ `
-<div id="kalenteri" class="container-fluid mb-4">
+<div id="kalenteri" class="container mb-4">
   <div class="row justify-content-center">
     <div class="col-md-8 text-center"><hr class="my-4" /></div>
   </div>
