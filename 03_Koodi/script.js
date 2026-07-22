@@ -20,12 +20,14 @@ var etusivuHTML = `
       <h1 class="display-3 font-weight-bold hero-title drop-shadow">Villa Leppäranta</h1>
     
       
-      <h2 class="lead my-3 font-weight-normal" style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); font-size: 1.5rem">
+      <h2 class="lead my-3 font-weight-normal" style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); 
+      font-size: 1.5rem">
         Luonnonrauhaa Simpelejärven rannalla Parikkalassa
       </h2>
       
       <!-- Painike linkitetty rullaamaan kalenteriin oikein -->
-      <a href="#" class="btn btn-primary btn-lg mt-4 px-4 py-3 font-weight-bold shadow" onclick="SkrollaaOsioon('kalenteri'); return false;">
+      <a href="#" class="btn btn-primary btn-lg mt-4 px-4 py-3 font-weight-bold shadow" 
+      onclick="SkrollaaOsioon('kalenteri'); return false;">
         Katso vapaat ajat
       </a>
     </div>
@@ -34,11 +36,15 @@ var etusivuHTML = `
   <div class="container-fluid mb-4">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <h2 class="mb-4 font-weight-bold text-dark text-center">Tervetuloa viihtymään luonnon keskelle</h2>
+            <h2 class="mb-4 font-weight-bold text-dark text-center">Tervetuloa viihtymään 
+            luonnon keskelle</h2>
             <p>
-            Villa Leppäranta tarjoaa täydelliset puitteet rentoutumiseen, perhelomailuun tai rauhalliseen
-            etätyöskentelyyn. Nauti puhtaasta järviluonnosta, puulämmitteisen saunan löylyistä ja omasta
-            rauhasta kaikkine mukavuuksineen.   Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa täydelliset puitteet 
+            Villa Leppäranta tarjoaa täydelliset puitteet rentoutumiseen, perhelomailuun tai 
+            rauhalliseen
+            etätyöskentelyyn. Nauti puhtaasta järviluonnosta, puulämmitteisen saunan löylyistä ja 
+            omasta
+            rauhasta kaikkine mukavuuksineen.   Saimaan ja Simpelejärven ympäröimä upea järviluonto 
+            tarjoaa täydelliset puitteet 
             ympärivuotiseen virkistäytymiseen ja rauhoittumiseen. Kirkkaat kalavedet, 
             männynraikkaat kangasmetsät ja laajat retkeilyreitit avautuvat heti mökin 
             kuistilta. Alueen ainutlaatuinen harjuluonto ja monipuoliset maastot kutsuvat 
@@ -75,7 +81,9 @@ var etusivuHTML = `
 `;
 
 // 1. Luodaan muuttuja, joka sisältää kaikki toistuvat attribuutit
-var klikattavaKuva = `cursor: pointer;" data-toggle="modal" data-target="#imageModal" onclick="document.getElementById('modalTargetImage').src=this.src; document.getElementById('modalTargetImage').alt=this.alt;"`;
+var klikattavaKuva = `cursor: pointer;" data-toggle="modal" data-target="#imageModal" 
+onclick="document.getElementById('modalTargetImage').src=this.src; 
+document.getElementById('modalTargetImage').alt=this.alt;"`;
 
 var varusteluHTML = `
 <div id="varustelu" class="container-fluid mb-4">
@@ -84,8 +92,10 @@ var varusteluHTML = `
        
             <h2 class="font-weight-bold text-center">Mökin varustelu ja mukavuudet</h2>
             <p>
-            Villa Leppäranta tarjoaa kattavat puitteet rentoutumiseen ja viihtymiseen Simpelejärven rannalla. Hyvin varusteltu
-            mökki mahdollistaa myös pidempiaikaisen oleskelun eri vuodenaikoina.  Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
+            Villa Leppäranta tarjoaa kattavat puitteet rentoutumiseen ja viihtymiseen Simpelejärven 
+            rannalla. Hyvin varusteltu
+            mökki mahdollistaa myös pidempiaikaisen oleskelun eri vuodenaikoina.  
+            Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
             tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
             käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
             paikallisista herkuista viihtyisissä lähikahviloissa. Kaikki tarvittavat 
@@ -117,40 +127,53 @@ var varusteluHTML = `
 
   <div class="row no-gutters mb-5 shadow-sm rounded overflow-hidden bg-white p-2">
   <div class="col-6 col-md-3 p-1">
-  <img src="Assets/Julkisivu.jpg" alt="Mökki pihalta katsottuna" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+  <img src="Assets/Julkisivu.jpg" 
+  alt="Mökki pihalta katsottuna" class="img-fluid w-100" style="height: 160px; object-fit: cover; 
+  ${klikattavaKuva}>
 </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Etusivu_klikattava_s.jpg" alt="Mökki ulkoa päin" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      <img src="Assets/Etusivu_klikattava_s.jpg" alt="Mökki ulkoa päin" class="img-fluid w-100" 
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Terassi.jpg" alt="Mökin terassi ja riippukeinu" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      <img src="Assets/Terassi.jpg" alt="Mökin terassi ja riippukeinu" class="img-fluid w-100" 
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Etupiha.jpg" alt="Näkymä järvelle kesällä" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      <img src="Assets/Etupiha.jpg" alt="Näkymä järvelle kesällä" class="img-fluid w-100" 
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Keittio_m.jpg" alt="Keittiönurkkaus" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      <img src="Assets/Keittio_m.jpg" alt="Keittiönurkkaus" class="img-fluid w-100" 
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Ruokailutila_s.jpg" alt="Ruokailutila" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      <img src="Assets/Ruokailutila_s.jpg" alt="Ruokailutila" class="img-fluid w-100" 
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Ruokapoyta_s.jpg" alt="Ruokapöytä" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      <img src="Assets/Ruokapoyta_s.jpg" alt="Ruokapöytä" class="img-fluid w-100" 
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/WC_m.jpg" alt="Sisä WC" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      <img src="Assets/WC_m.jpg" alt="Sisä WC" class="img-fluid w-100" 
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/WC2.jpg" alt="Käsienpesupaikka" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      <img src="Assets/WC2.jpg" alt="Käsienpesupaikka" class="img-fluid w-100" 
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Pesutila_s.jpg" alt="Pesutilat" class="img-fluid w-100" style="height: 160px; object-fit: cover;${klikattavaKuva}>
+      <img src="Assets/Pesutila_s.jpg" alt="Pesutilat" class="img-fluid w-100" 
+      style="height: 160px; object-fit: cover;${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Suihku_s.jpg" alt="Suihkutilat" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      <img src="Assets/Suihku_s.jpg" alt="Suihkutilat" class="img-fluid w-100" 
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
     <div class="col-6 col-md-3 p-1">
-      <img src="Assets/Sauna_m.jpg" alt="Pieni tunnelmallinen sauna" class="img-fluid w-100" style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      <img src="Assets/Sauna_m.jpg" alt="Pieni tunnelmallinen sauna" class="img-fluid w-100" 
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
     </div>
   </div>
 
@@ -193,25 +216,32 @@ var alueHTML = `
 
             <h2 class="font-weight-bold text-center">Alue ja aktiviteetit</h2> 
             <p>Villa Leppäranta sijaitsee luonnon keskellä, mutta silti lähellä palveluita ja
-            Itä-Suomen kauniita kaupunkeja. Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
+            Itä-Suomen kauniita kaupunkeja. Lähialueen monipuoliset palvelut ja kulttuurikohteet 
+            varmistavat, että 
             tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
             käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
             paikallisista herkuista viihtyisissä lähikahviloissa. Kaikki tarvittavat 
             peruspalvelut löytyvät vain lyhyen ajomatkan päästä, joten lomanvietto on 
             vaivatonta ja huoletonta.</p>
 
-            <p>Parikkalan S-marketiin on matkaa 15 km ja Röksän kyläkauppaan (3,5 km) polkaiset vaikkapa
-            polkupyörällä. Liikenneasema ABC Särkisalmi sijaitsee 9 km päässä.  Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
+            <p>Parikkalan S-marketiin on matkaa 15 km ja Röksän kyläkauppaan (3,5 km) 
+            polkaiset vaikkapa
+            polkupyörällä. Liikenneasema ABC Särkisalmi sijaitsee 9 km päässä.  Lähialueen 
+            monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
             tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
             käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
             paikallisista herkuista viihtyisissä lähikahviloissa. Kaikki tarvittavat 
             peruspalvelut löytyvät vain lyhyen ajomatkan päästä, joten lomanvietto on 
             vaivatonta ja huoletonta.</p>
 
-            <p>Mikäli pelkkä upea järvimaiseman katselu ja hiljaisesta kiireettömyydestä nauttiminen ei riitä,
-            tarjoaa ympäristö aktiviteetteja. Korkeakulttuurin ystävät hurauttavat autolla Savonlinnan
-            Oopperajuhlille tunnissa, ja samalla voi ihastella Suomen kauneimmaksi valittua Punkaharjun
-            maisemareittiä.  Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
+            <p>Mikäli pelkkä upea järvimaiseman katselu ja hiljaisesta kiireettömyydestä 
+            nauttiminen ei riitä,
+            tarjoaa ympäristö aktiviteetteja. Korkeakulttuurin ystävät hurauttavat autolla S
+            avonlinnan
+            Oopperajuhlille tunnissa, ja samalla voi ihastella Suomen kauneimmaksi valittua 
+            Punkaharjun
+            maisemareittiä.  Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, 
+            että 
             tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
             käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
             paikallisista herkuista viihtyisissä lähikahviloissa. Kaikki tarvittavat 
@@ -219,34 +249,46 @@ var alueHTML = `
             vaivatonta ja huoletonta. </p>
 
             <h2 class="font-weight-bold text-center">Kulttuuri, retkeily ja lähikohteet</h2>
-            <p>Paikallista kulttuuritarjontaa löytyy muun muassa Parikkalan kesäteatterin, kesäkonserttien sekä
+            <p>Paikallista kulttuuritarjontaa löytyy muun muassa Parikkalan kesäteatterin, 
+            kesäkonserttien sekä
             kylätapahtumien muodossa. Erityislaatuisen kulttuurikohteen tarjoaa kuuluisa
-            <a href="https://www.patsaspuisto.net" target="blank">Parikkalan Patsaspuisto.<a/>Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa täydelliset puitteet 
+            <a href="https://www.patsaspuisto.net" target="blank">Parikkalan 
+            Patsaspuisto.<a/>Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa 
+            täydelliset puitteet 
             ympärivuotiseen virkistäytymiseen ja rauhoittumiseen. Kirkkaat kalavedet, 
             männynraikkaat kangasmetsät ja laajat retkeilyreitit avautuvat heti mökin 
             kuistilta. Alueen ainutlaatuinen harjuluonto ja monipuoliset maastot kutsuvat 
             seikkailuun niin kesäisin kuin talvisinkin, tarjoten jokaiselle matkailijalle 
             jotakin uutta koettavaa.</p>
 
-            <p>Patsaspuiston välittömässä läheisyydessä voi käydä herkuttelemassa biisoniburgerilla <a href="https://iloinenpassi.fi" target="blank">Iloisen Pässin
-            Maalaispuodissa.</a>  Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
+            <p>Patsaspuiston välittömässä läheisyydessä voi käydä herkuttelemassa biisoniburgerilla 
+            <a href="https://iloinenpassi.fi" target="blank">Iloisen Pässin
+            Maalaispuodissa.</a>  Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat,
+            että 
             tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
             käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
             paikallisista herkuista viihtyisissä lähikahviloissa. Kaikki tarvittavat 
             peruspalvelut löytyvät vain lyhyen ajomatkan päästä, joten lomanvietto on 
             vaivatonta ja huoletonta.</p>
-            <p>Luonto tarjoaa runsaasti puuhasteltavaa metsänkävijöille. Upeat Retkeily- marjastus- ja sienestysmaastot ovat ympärillä ja
-            Simpelejärvi tarjoaa hienot puitteet kalastukseen.  Kesäpäivät kuluvat rattoisasti saunoen, soutelemalla ja puhtaan järviveden 
+            <p>Luonto tarjoaa runsaasti puuhasteltavaa metsänkävijöille. Upeat Retkeily- marjastus-
+             ja sienestysmaastot ovat ympärillä ja
+            Simpelejärvi tarjoaa hienot puitteet kalastukseen.  Kesäpäivät kuluvat rattoisasti 
+            saunoen, soutelemalla ja puhtaan järviveden 
             syleilyssä uiden. Syksyn tullen lähimetsät täyttyvät runsaasta marja- ja 
             sienisadosta, ja hiljaisuus laskeutuu tyynen veden ylle. Mökkeily on ennen kaikkea 
             irtiottokokemus arjen kiireistä – paikka, jossa aika pysähtyy, puusaunan tuoksu 
             täyttää ilman ja luonnon omat äänet luovat täydellisen taustamusiikin 
             lomahetkillesi.</p>
 
-            <p>Kansainvälisestikin arvokas lintukohde <a href="https://visitparikkala.fi/lintukohteet/" target="blank">Siikalahti</a>  sijaitsee
-                18 km päässä ja tarjoaa upeita luontoelämyksiä koko perheelle. Erilaisia retkeilyreittejä löytyy lähialueelta runsaasti. 
-                Tutustu esimerkiksi <a href="https://visitparikkala.fi/lintukohteet/aate-pekan-polku" target="blank">Aate-Pekan polkuun</a>
-                ja <a href="https://visitparikkala.fi/retkeilyreitit/poropeikon-polku" target="blank">Pöröpeikon polkuun. 
+            <p>Kansainvälisestikin arvokas lintukohde 
+            <a href="https://visitparikkala.fi/lintukohteet/" target="blank">Siikalahti</a>  
+            sijaitsee
+                18 km päässä ja tarjoaa upeita luontoelämyksiä koko perheelle. 
+                Erilaisia retkeilyreittejä löytyy lähialueelta runsaasti. 
+                Tutustu esimerkiksi <a href="https://visitparikkala.fi/lintukohteet/aate-pekan-polku" 
+                target="blank">Aate-Pekan polkuun</a>
+                ja <a href="https://visitparikkala.fi/retkeilyreitit/poropeikon-polku" 
+                target="blank">Pöröpeikon polkuun. 
                 </a>  Saimaan ja Simpelejärven ympäröimä upea järviluonto tarjoaa täydelliset puitteet 
                 ympärivuotiseen virkistäytymiseen ja rauhoittumiseen. Kirkkaat kalavedet, 
                 männynraikkaat kangasmetsät ja laajat retkeilyreitit avautuvat heti mökin 
@@ -255,7 +297,8 @@ var alueHTML = `
                 jotakin uutta koettavaa.
             </p>
             
-            <p>Eläinten ystäville löytyy lähes naapurista <a href="https://www.peltolanratsutila.fi" target="blank">Peltolan ratsutila.</a>
+            <p>Eläinten ystäville löytyy lähes naapurista <a href="https://www.peltolanratsutila.fi" 
+            target="blank">Peltolan ratsutila.</a>
             Lähialueen monipuoliset palvelut ja kulttuurikohteet varmistavat, että 
             tekemistä riittää pidemmäksi kuin viikonlopun ajaksi. Voit tutustua paikallisiin 
             käsityöläisiin, vierailla historiallisilla nähtävyyksillä tai nauttia 
@@ -324,7 +367,9 @@ var alueHTML = `
     <div class="col-md-8 text-center">
       <h2 class="mb-3 font-weight-bold">Sijainti kartalla</h2>
       <div class="embed-responsive w-100 embed-responsive-16by9 border rounded shadow-sm">
-        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1872.2478546193755!2d29.4975735!3d61.5544444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469a45610ec25277%3A0x67db1a1d3557876a!2sParikkala!5e0!3m2!1sfi!2sfi!4v1710000000000!5m2!1sfi!2sfi" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="embed-responsive-item" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1872.2478546193755!2d29.4975735!3d61.5544444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469a45610ec25277%3A0x67db1a1d3557876a!2sParikkala!5e0!3m2!1sfi!2sfi!4v1710000000000!5m2!1sfi!2sfi" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
@@ -337,20 +382,24 @@ var yhteydenottoHTML = `
         <div class="col-md-8 my-4 text-center">
     
                 <h2 class="font-weight-bold">Ota yhteyttä</h2>
-                <p class="text-center">Onko sinulla kysyttävää mökistä tai haluatko tehdä varauksen? Lähetä meille viesti!</p>
+                <p class="text-center">Onko sinulla kysyttävää mökistä tai haluatko tehdä 
+                varauksen? Lähetä meille viesti!</p>
    
             <form action="#" method="POST" onsubmit=return false;">
         <div class="form-group">
           <label for="nimi">Nimi</label>
-          <input type="text" id="nimi" class="form-control" placeholder="Etunimi Sukunimi" required/>
+          <input type="text" id="nimi" class="form-control" 
+          placeholder="Etunimi Sukunimi" required/>
         </div>
         <div class="form-group">
           <label for="email">Sähköposti</label>
-          <input type="email" id="email" class="form-control" placeholder="Matti.Meikäläinen@esimerkki.fi" required/>
+          <input type="email" id="email" class="form-control" 
+          placeholder="Matti.Meikäläinen@esimerkki.fi" required/>
         </div>
         <div class="form-group">
           <label for="viesti">Viesti</label>
-          <textarea id="viesti" class="form-control" rows="5" placeholder="Kirjoita viestisi tähän..." required></textarea>
+          <textarea id="viesti" class="form-control" rows="5" 
+          placeholder="Kirjoita viestisi tähän..." required></textarea>
         </div>
         <button type="submit" class="btn btn-primary btn-block">Lähetä viesti</button>
       </form>
