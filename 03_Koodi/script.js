@@ -133,47 +133,47 @@ var varusteluHTML = /* html */ `
 </div>
     <div class="col-6 col-md-3 p-1">
       <img src="Assets/Etusivu_klikattava_s.jpg" alt="Mökki ulkoa päin" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
     </div>
     <div class="col-6 col-md-3 p-1">
       <img src="Assets/Terassi.jpg" alt="Mökin terassi ja riippukeinu" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
     </div>
     <div class="col-6 col-md-3 p-1">
       <img src="Assets/Etupiha.jpg" alt="Näkymä järvelle kesällä" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
     </div>
     <div class="col-6 col-md-3 p-1">
       <img src="Assets/Keittio_m.jpg" alt="Keittiönurkkaus" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
     </div>
     <div class="col-6 col-md-3 p-1">
       <img src="Assets/Ruokailutila_s.jpg" alt="Ruokailutila" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
     </div>
     <div class="col-6 col-md-3 p-1">
       <img src="Assets/Ruokapoyta_s.jpg" alt="Ruokapöytä" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
     </div>
     <div class="col-6 col-md-3 p-1">
       <img src="Assets/WC_m.jpg" alt="Sisä WC" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
     </div>
     <div class="col-6 col-md-3 p-1">
       <img src="Assets/WC2.jpg" alt="Käsienpesupaikka" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
     </div>
     <div class="col-6 col-md-3 p-1">
       <img src="Assets/Pesutila_s.jpg" alt="Pesutilat" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover;${klikattavaKuva}>
+      style="height: 160px; object-fit: cover;${klikattavaKuva}">
     </div>
     <div class="col-6 col-md-3 p-1">
       <img src="Assets/Suihku_s.jpg" alt="Suihkutilat" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
     </div>
     <div class="col-6 col-md-3 p-1">
       <img src="Assets/Sauna_m.jpg" alt="Pieni tunnelmallinen sauna" class="img-fluid w-100" 
-      style="height: 160px; object-fit: cover; ${klikattavaKuva}>
+      style="height: 160px; object-fit: cover; ${klikattavaKuva}">
     </div>
   </div>
 
