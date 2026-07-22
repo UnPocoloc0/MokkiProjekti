@@ -183,11 +183,11 @@ ul.palvelu-lista li {
   }
 }
 
-/* Kohdistetaan elementteihin (esim. img, .card tai .img-thumbnail) */
+
 .card img,
 .img-fluid,
 #galleria img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Tekee liikkeestä sulavan */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .img-fluid,
@@ -201,8 +201,7 @@ ul.palvelu-lista li {
   cursor: pointer;
 }
 
-/* Pidetään selkeä vasen tasaus */
-/* Sallii selaimen tavuttaa pitkiä sanoja automaattisesti */
+
 p {
   text-align: left;
   hyphens: auto;
@@ -215,35 +214,30 @@ footer p,
   text-align: center !important;
 }
 
-/* Mobiilivalikon tyylit silloin, kun se on auki (alle 992px ruuduilla) */
+
 @media (max-width: 991.98px) {
   #mainNavBar {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* Ohut vaalea rajaus navigaation alle */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); 
   }
 
-  /* Lisätään hieman ilmaa myös yksittäisten linkkien väliin mobiilissa */
-  /* #mainNavBar .nav-link {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-} */
 
-/* Mobiilivalikon tyylit (alle 992px ruuduilla) */
+
+
 @media (max-width: 991.98px) {
-    /* Lisätään hieman ilmaa koko valikon yläreunaan */
+   
     #mainNavBar {
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
     }
   
-    /* Lisätään jokaisen linkkielementin alle ohut rajaus ja väljyyttä */
+ 
     #mainNavBar .nav-item {
       border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     }
   
-    /* Siistitään linkkien pystysuuntainen tila (padding) */
+   
     #mainNavBar .nav-link {
       padding-top: 0.6rem;
       padding-bottom: 0.6rem;
