@@ -25,13 +25,14 @@ sandbox.html
 # ====================
 # Mediat ja binaarit
 # ====================
-Assets/
-*.jpg
-*.jpeg
-*.png
-*.gif
+# Assets/
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
 
 #==================
 # VSC-piilotiedosto
 #==================
 03_Koodi/.vscode/
+
