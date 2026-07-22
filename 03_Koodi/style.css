@@ -3,7 +3,10 @@
 1. TEEMAN VÄRIT MUUTTUJINA:
 ===========================
 */
-
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 :root {
   --color-primary: #1e4d6b;
   --color-primary-hover: #15364b;
@@ -248,3 +251,7 @@ footer p,
       }
 
   }
+
+  /* * {
+    outline: 1px solid red !important;
+  } */
