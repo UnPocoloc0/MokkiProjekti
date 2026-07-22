@@ -1,4 +1,4 @@
-var etusivuHTML = `
+var etusivuHTML = /* html */ `
 <div id="etusivu" class="container-fluid p-0 mb-4">
   <div
     class="jumbotron jumbotron-fluid text-center text-white border-bottom shadow-sm"
@@ -16,7 +16,7 @@ var etusivuHTML = `
     "
   >
     <div class="container py-5">
-      <!-- Lisätty .hero-title luokka suoraan tänne -->
+    
       <h1 class="display-3 font-weight-bold hero-title drop-shadow">Villa Leppäranta</h1>
     
       
@@ -25,7 +25,7 @@ var etusivuHTML = `
         Luonnonrauhaa Simpelejärven rannalla Parikkalassa
       </h2>
       
-      <!-- Painike linkitetty rullaamaan kalenteriin oikein -->
+
       <a href="#" class="btn btn-primary btn-lg mt-4 px-4 py-3 font-weight-bold shadow" 
       onclick="SkrollaaOsioon('kalenteri'); return false;">
         Katso vapaat ajat
@@ -85,7 +85,7 @@ var klikattavaKuva = `cursor: pointer;" data-toggle="modal" data-target="#imageM
 onclick="document.getElementById('modalTargetImage').src=this.src; 
 document.getElementById('modalTargetImage').alt=this.alt;"`;
 
-var varusteluHTML = `
+var varusteluHTML = /* html */ `
 <div id="varustelu" class="container-fluid mb-4">
     <div class="row justify-content-center">
         <div class="col-md-8 my-4">
@@ -209,7 +209,7 @@ var varusteluHTML = `
 </div>
 `;
 
-var alueHTML = `
+var alueHTML = /* html */ `
 <div id="alue" class="container-fluid mb-4">
     <div class="row justify-content-center">
         <div class="col-md-8 my-4">
@@ -376,7 +376,7 @@ var alueHTML = `
 </div>
 `;
 
-var yhteydenottoHTML = `
+var yhteydenottoHTML = /* html */ `
 <div id="yhteydenotto" class="container-fluid mb-4">
     <div class="row justify-content-center">
         <div class="col-md-8 my-4 text-center">
@@ -409,13 +409,13 @@ var yhteydenottoHTML = `
 </div>
 `;
 
-var kalenteriHTML = `
+const RIVI_TYYLI = "list-group-item d-flex justify-content-between align-items-center";
+const BADGE_TYYLI = "badge badge-pill p-2";
 
+var kalenteriHTML = /* html*/ `
 <div id="kalenteri" class="container-fluid mb-4">
   <div class="row justify-content-center">
-    <div class="col-md-8 text-center">
-      <hr class="my-4" />
-    </div>
+    <div class="col-md-8 text-center"><hr class="my-4" /></div>
   </div>
 
   <div class="my-4">
@@ -424,18 +424,28 @@ var kalenteriHTML = `
   </div>
 
   <div class="row justify-content-center">
-    <div class="col-md-8">
+  <div class="col-md-8">
       <h3 class="font-weight-bold text-center">Kesä/ syksy 2026</h3>
       <ul class="list-group shadow-sm text-secondary">
-        <li class="list-group-item d-flex justify-content-between align-items-center"><span><strong>Heinäkuu</strong></span><span class="badge badge-danger badge-pill p-2">Varattu</span></li>
-        <li class="list-group-item d-flex justify-content-between align-items-center"><span><strong>Elokuu</strong></span><span class="badge badge-warning badge-pill p-2">Osittain vapaana</span></li>
-        <li class="list-group-item d-flex justify-content-between align-items-center"><span><strong>Syyskuu</strong></span><span class="badge badge-success badge-pill p-2">Vapaa</span></li>      
+        <li class="${RIVI_TYYLI}">
+    <span><strong>Heinäkuu</strong></span>
+          <span class="${BADGE_TYYLI} badge-danger">Varattu</span>
+        </li>
+        <li class="${RIVI_TYYLI}">
+          <span><strong>Elokuu</strong></span>
+          <span class="${BADGE_TYYLI} badge-warning">Osittain vapaana</span>
+        </li>
+        <li class="${RIVI_TYYLI}">
+          <span><strong>Syyskuu</strong></span>
+          <span class="${BADGE_TYYLI} badge-success">Vapaa</span>
+        </li>
       </ul>
     </div>
   </div>
 </div>
 `;
 
+/* FUNKTIOT */
 function LataaAloitusSisalto() {
   document.getElementById("kontentti").innerHTML =
     etusivuHTML + varusteluHTML + alueHTML + yhteydenottoHTML + kalenteriHTML;
